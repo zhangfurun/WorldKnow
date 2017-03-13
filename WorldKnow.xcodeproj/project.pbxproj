@@ -931,7 +931,6 @@
 			isa = PBXGroup;
 			children = (
 				2DEEE9321E7402A30089CE1F /* Classes */,
-				2DB2EC8C1C60863B0080E41E /* Main.storyboard */,
 				2D1BCC581C893FB7004637C6 /* Header.pch */,
 				2D1065451C857DDD005C5667 /* NewsList.plist */,
 				2D99C2D41C9059A30035025A /* cityList.plist */,
@@ -955,6 +954,10 @@
 		2DB2EC831C60863B0080E41E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2DB2EC8C1C60863B0080E41E /* Main.storyboard */,
+				2DB2EC8F1C60863B0080E41E /* Assets.xcassets */,
+				2DB2EC911C60863B0080E41E /* LaunchScreen.storyboard */,
+				2DB2EC941C60863B0080E41E /* Info.plist */,
 				2DB2EC841C60863B0080E41E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -981,10 +984,7 @@
 		2DB2ECB61C60A69A0080E41E /* APP */ = {
 			isa = PBXGroup;
 			children = (
-				2DB2EC8F1C60863B0080E41E /* Assets.xcassets */,
 				2D1BCC0C1C8849A1004637C6 /* image */,
-				2DB2EC911C60863B0080E41E /* LaunchScreen.storyboard */,
-				2DB2EC941C60863B0080E41E /* Info.plist */,
 				2DB2EC891C60863B0080E41E /* ViewController.h */,
 				2DB2EC8A1C60863B0080E41E /* ViewController.m */,
 			);
