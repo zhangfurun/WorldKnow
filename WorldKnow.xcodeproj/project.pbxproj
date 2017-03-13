@@ -97,7 +97,6 @@
 		2D99C2E21C908E540035025A /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D99C2E11C908E540035025A /* Property List.plist */; };
 		2D99CA881C61F6AD00823F51 /* FirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D99CA871C61F6AD00823F51 /* FirstModel.m */; };
 		2DB2EC851C60863B0080E41E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2EC841C60863B0080E41E /* main.m */; };
-		2DB2EC881C60863B0080E41E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2EC871C60863B0080E41E /* AppDelegate.m */; };
 		2DB2EC8B1C60863B0080E41E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2EC8A1C60863B0080E41E /* ViewController.m */; };
 		2DB2EC8E1C60863B0080E41E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DB2EC8C1C60863B0080E41E /* Main.storyboard */; };
 		2DB2EC901C60863B0080E41E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB2EC8F1C60863B0080E41E /* Assets.xcassets */; };
@@ -157,6 +156,7 @@
 		2DEEEADF1E766B2F0089CE1F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEADE1E766B2F0089CE1F /* libsqlite3.tbd */; };
 		2DEEEAE11E766B670089CE1F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAE01E766B670089CE1F /* libc++.tbd */; };
 		2DEEEAE31E766B720089CE1F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAE21E766B720089CE1F /* ImageIO.framework */; };
+		2DEEF9CC1E76FF900089CE1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEF9CB1E76FF900089CE1F /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -310,8 +310,6 @@
 		2D99CA871C61F6AD00823F51 /* FirstModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstModel.m; sourceTree = "<group>"; };
 		2DB2EC801C60863B0080E41E /* WorldKnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldKnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB2EC841C60863B0080E41E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2DB2EC861C60863B0080E41E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2DB2EC871C60863B0080E41E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2DB2EC891C60863B0080E41E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2DB2EC8A1C60863B0080E41E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2DB2EC8D1C60863B0080E41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -418,6 +416,8 @@
 		2DEEEADE1E766B2F0089CE1F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2DEEEAE01E766B670089CE1F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2DEEEAE21E766B720089CE1F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2DEEF9CA1E76FF900089CE1F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DEEF9CB1E76FF900089CE1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -985,8 +985,6 @@
 				2D1BCC0C1C8849A1004637C6 /* image */,
 				2DB2EC911C60863B0080E41E /* LaunchScreen.storyboard */,
 				2DB2EC941C60863B0080E41E /* Info.plist */,
-				2DB2EC861C60863B0080E41E /* AppDelegate.h */,
-				2DB2EC871C60863B0080E41E /* AppDelegate.m */,
 				2DB2EC891C60863B0080E41E /* ViewController.h */,
 				2DB2EC8A1C60863B0080E41E /* ViewController.m */,
 			);
@@ -1089,6 +1087,8 @@
 		2DEEE9391E7402A30089CE1F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				2DEEF9CA1E76FF900089CE1F /* AppDelegate.h */,
+				2DEEF9CB1E76FF900089CE1F /* AppDelegate.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1526,13 +1526,13 @@
 				2DB2ED071C60F68F0080E41E /* GDataXMLNode.m in Sources */,
 				2D5147081C8AD8BB007A3C7F /* MJRefreshNormalHeader.m in Sources */,
 				2DEEEA3D1E763A080089CE1F /* RESideMenu.m in Sources */,
+				2DEEF9CC1E76FF900089CE1F /* AppDelegate.m in Sources */,
 				2D5147021C8AD8BB007A3C7F /* MJRefreshAutoNormalFooter.m in Sources */,
 				2D51470E1C8AD8BB007A3C7F /* UIView+MJExtension.m in Sources */,
 				2D2C16F61C8D8DB30084BEF4 /* ThreeImageTableViewCell.m in Sources */,
 				2DB2ED081C60F68F0080E41E /* Reachability.m in Sources */,
 				2D1BCC261C8850DC004637C6 /* RightViewController.m in Sources */,
 				2DEEEA021E74442F0089CE1F /* README.md in Sources */,
-				2DB2EC881C60863B0080E41E /* AppDelegate.m in Sources */,
 				2DB2ECBE1C60A6D70080E41E /* FirstViewController.m in Sources */,
 				2D5147061C8AD8BB007A3C7F /* MJRefreshBackStateFooter.m in Sources */,
 				2DB2ECBB1C60A6CA0080E41E /* FirstTableViewCell.m in Sources */,
