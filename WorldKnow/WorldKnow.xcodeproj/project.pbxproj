@@ -110,49 +110,11 @@
 		2DB2ED071C60F68F0080E41E /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2ED041C60F68F0080E41E /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2DB2ED081C60F68F0080E41E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2ED061C60F68F0080E41E /* Reachability.m */; };
 		2DB2ED0A1C60F6B90080E41E /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB2ED091C60F6B90080E41E /* libxml2.2.tbd */; };
-		2DEEE9691E7444260089CE1F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEE9651E7444260089CE1F /* LICENSE */; };
-		2DEEE96A1E7444260089CE1F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9671E7444260089CE1F /* MBProgressHUD.m */; };
-		2DEEE96B1E7444260089CE1F /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9681E7444260089CE1F /* README.mdown */; };
-		2DEEEA011E74442F0089CE1F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEE9771E74442F0089CE1F /* LICENSE */; };
-		2DEEEA021E74442F0089CE1F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9781E74442F0089CE1F /* README.md */; };
-		2DEEEA031E74442F0089CE1F /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE97B1E74442F0089CE1F /* NSData+ImageContentType.m */; };
-		2DEEEA041E74442F0089CE1F /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE97D1E74442F0089CE1F /* SDImageCache.m */; };
-		2DEEEA051E74442F0089CE1F /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE97F1E74442F0089CE1F /* SDWebImageCompat.m */; };
-		2DEEEA061E74442F0089CE1F /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9811E74442F0089CE1F /* SDWebImageDecoder.m */; };
-		2DEEEA071E74442F0089CE1F /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9831E74442F0089CE1F /* SDWebImageDownloader.m */; };
-		2DEEEA081E74442F0089CE1F /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9851E74442F0089CE1F /* SDWebImageDownloaderOperation.m */; };
-		2DEEEA091E74442F0089CE1F /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9871E74442F0089CE1F /* SDWebImageManager.m */; };
-		2DEEEA0A1E74442F0089CE1F /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE98A1E74442F0089CE1F /* SDWebImagePrefetcher.m */; };
-		2DEEEA0B1E74442F0089CE1F /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE98C1E74442F0089CE1F /* UIButton+WebCache.m */; };
-		2DEEEA0C1E74442F0089CE1F /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE98E1E74442F0089CE1F /* UIImage+GIF.m */; };
-		2DEEEA0D1E74442F0089CE1F /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9901E74442F0089CE1F /* UIImage+MultiFormat.m */; };
-		2DEEEA0E1E74442F0089CE1F /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9921E74442F0089CE1F /* UIImageView+HighlightedWebCache.m */; };
-		2DEEEA0F1E74442F0089CE1F /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9941E74442F0089CE1F /* UIImageView+WebCache.m */; };
-		2DEEEA101E74442F0089CE1F /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEE9961E74442F0089CE1F /* UIView+WebCacheOperation.m */; };
-		2DEEEA3C1E763A080089CE1F /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEEA371E763A080089CE1F /* RECommonFunctions.m */; };
-		2DEEEA3D1E763A080089CE1F /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEEA391E763A080089CE1F /* RESideMenu.m */; };
-		2DEEEA3E1E763A080089CE1F /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEEA3B1E763A080089CE1F /* UIViewController+RESideMenu.m */; };
 		2DEEEA461E7646370089CE1F /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA451E7646370089CE1F /* libz.1.2.8.tbd */; };
 		2DEEEA481E7646400089CE1F /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA471E7646400089CE1F /* libc++.1.tbd */; };
 		2DEEEA4A1E76464A0089CE1F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA491E76464A0089CE1F /* libicucore.tbd */; };
 		2DEEEA4C1E7646630089CE1F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA4B1E7646630089CE1F /* MobileCoreServices.framework */; };
 		2DEEEA4E1E7646700089CE1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA4D1E7646700089CE1F /* CoreLocation.framework */; };
-		2DEEEACE1E766AD70089CE1F /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAA91E766AD70089CE1F /* libSocialQQ.a */; };
-		2DEEEACF1E766AD70089CE1F /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAAA1E766AD70089CE1F /* TencentOpenAPI.framework */; };
-		2DEEEAD01E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEEAAB1E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle */; };
-		2DEEEAD11E766AD70089CE1F /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAAE1E766AD70089CE1F /* libSocialSina.a */; };
-		2DEEEAD21E766AD70089CE1F /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAAF1E766AD70089CE1F /* libWeiboSDK.a */; };
-		2DEEEAD31E766AD70089CE1F /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEEABA1E766AD70089CE1F /* WeiboSDK.bundle */; };
-		2DEEEAD41E766AD70089CE1F /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEABE1E766AD70089CE1F /* libSocialWeChat.a */; };
-		2DEEEAD51E766AD70089CE1F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEABF1E766AD70089CE1F /* libWeChatSDK.a */; };
-		2DEEEAD61E766AD70089CE1F /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEEAC01E766AD70089CE1F /* read_me.txt */; };
-		2DEEEAD71E766AD70089CE1F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEEAC11E766AD70089CE1F /* README.txt */; };
-		2DEEEAD81E766AD70089CE1F /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAC71E766AD70089CE1F /* libUMSocialLog.a */; };
-		2DEEEAD91E766AD70089CE1F /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAC81E766AD70089CE1F /* UMSocialCore.framework */; };
-		2DEEEADA1E766AD70089CE1F /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAC91E766AD70089CE1F /* UMSocialNetwork.framework */; };
-		2DEEEADB1E766AD70089CE1F /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEEACA1E766AD70089CE1F /* UMSocialSDKPromptResources.bundle */; };
-		2DEEEADC1E766AD70089CE1F /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEEACC1E766AD70089CE1F /* UMSocialSDKResources.bundle */; };
-		2DEEEADD1E766AD70089CE1F /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEACD1E766AD70089CE1F /* UShareUI.framework */; };
 		2DEEEADF1E766B2F0089CE1F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEADE1E766B2F0089CE1F /* libsqlite3.tbd */; };
 		2DEEEAE11E766B670089CE1F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAE01E766B670089CE1F /* libc++.tbd */; };
 		2DEEEAE31E766B720089CE1F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAE21E766B720089CE1F /* ImageIO.framework */; };
@@ -335,85 +297,11 @@
 		2DB2ED051C60F68F0080E41E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2DB2ED061C60F68F0080E41E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2DB2ED091C60F6B90080E41E /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
-		2DEEE9651E7444260089CE1F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		2DEEE9661E7444260089CE1F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		2DEEE9671E7444260089CE1F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		2DEEE9681E7444260089CE1F /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
-		2DEEE9771E74442F0089CE1F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		2DEEE9781E74442F0089CE1F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2DEEE97A1E74442F0089CE1F /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
-		2DEEE97B1E74442F0089CE1F /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
-		2DEEE97C1E74442F0089CE1F /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
-		2DEEE97D1E74442F0089CE1F /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
-		2DEEE97E1E74442F0089CE1F /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
-		2DEEE97F1E74442F0089CE1F /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
-		2DEEE9801E74442F0089CE1F /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
-		2DEEE9811E74442F0089CE1F /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
-		2DEEE9821E74442F0089CE1F /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
-		2DEEE9831E74442F0089CE1F /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
-		2DEEE9841E74442F0089CE1F /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		2DEEE9851E74442F0089CE1F /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
-		2DEEE9861E74442F0089CE1F /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
-		2DEEE9871E74442F0089CE1F /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
-		2DEEE9881E74442F0089CE1F /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
-		2DEEE9891E74442F0089CE1F /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		2DEEE98A1E74442F0089CE1F /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		2DEEE98B1E74442F0089CE1F /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
-		2DEEE98C1E74442F0089CE1F /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
-		2DEEE98D1E74442F0089CE1F /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
-		2DEEE98E1E74442F0089CE1F /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
-		2DEEE98F1E74442F0089CE1F /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
-		2DEEE9901E74442F0089CE1F /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
-		2DEEE9911E74442F0089CE1F /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
-		2DEEE9921E74442F0089CE1F /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
-		2DEEE9931E74442F0089CE1F /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
-		2DEEE9941E74442F0089CE1F /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		2DEEE9951E74442F0089CE1F /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
-		2DEEE9961E74442F0089CE1F /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		2DEEEA361E763A080089CE1F /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
-		2DEEEA371E763A080089CE1F /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
-		2DEEEA381E763A080089CE1F /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
-		2DEEEA391E763A080089CE1F /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
-		2DEEEA3A1E763A080089CE1F /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
-		2DEEEA3B1E763A080089CE1F /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
 		2DEEEA451E7646370089CE1F /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
 		2DEEEA471E7646400089CE1F /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		2DEEEA491E76464A0089CE1F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		2DEEEA4B1E7646630089CE1F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		2DEEEA4D1E7646700089CE1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		2DEEEAA91E766AD70089CE1F /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
-		2DEEEAAA1E766AD70089CE1F /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
-		2DEEEAAB1E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
-		2DEEEAAC1E766AD70089CE1F /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
-		2DEEEAAE1E766AD70089CE1F /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
-		2DEEEAAF1E766AD70089CE1F /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
-		2DEEEAB01E766AD70089CE1F /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
-		2DEEEAB11E766AD70089CE1F /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
-		2DEEEAB21E766AD70089CE1F /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
-		2DEEEAB31E766AD70089CE1F /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
-		2DEEEAB41E766AD70089CE1F /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
-		2DEEEAB51E766AD70089CE1F /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
-		2DEEEAB61E766AD70089CE1F /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
-		2DEEEAB71E766AD70089CE1F /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
-		2DEEEAB81E766AD70089CE1F /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
-		2DEEEAB91E766AD70089CE1F /* WeiboSDK+Statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeiboSDK+Statistics.h"; sourceTree = "<group>"; };
-		2DEEEABA1E766AD70089CE1F /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
-		2DEEEABB1E766AD70089CE1F /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
-		2DEEEABC1E766AD70089CE1F /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
-		2DEEEABE1E766AD70089CE1F /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
-		2DEEEABF1E766AD70089CE1F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		2DEEEAC01E766AD70089CE1F /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
-		2DEEEAC11E766AD70089CE1F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		2DEEEAC21E766AD70089CE1F /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
-		2DEEEAC31E766AD70089CE1F /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		2DEEEAC41E766AD70089CE1F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		2DEEEAC51E766AD70089CE1F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		2DEEEAC71E766AD70089CE1F /* libUMSocialLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialLog.a; sourceTree = "<group>"; };
-		2DEEEAC81E766AD70089CE1F /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialCore.framework; sourceTree = "<group>"; };
-		2DEEEAC91E766AD70089CE1F /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
-		2DEEEACA1E766AD70089CE1F /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
-		2DEEEACC1E766AD70089CE1F /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
-		2DEEEACD1E766AD70089CE1F /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
 		2DEEEADE1E766B2F0089CE1F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		2DEEEAE01E766B670089CE1F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		2DEEEAE21E766B720089CE1F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -430,29 +318,19 @@
 				2D2C16FC1C8DC9320084BEF4 /* SystemConfiguration.framework in Frameworks */,
 				2D2C16FE1C8DC93C0084BEF4 /* CoreGraphics.framework in Frameworks */,
 				2DEEEADF1E766B2F0089CE1F /* libsqlite3.tbd in Frameworks */,
-				2DEEEACE1E766AD70089CE1F /* libSocialQQ.a in Frameworks */,
 				2DEEEA4E1E7646700089CE1F /* CoreLocation.framework in Frameworks */,
 				2D2C17021C8DC9530084BEF4 /* CoreTelephony.framework in Frameworks */,
 				2DEEEA4C1E7646630089CE1F /* MobileCoreServices.framework in Frameworks */,
 				2D2C17001C8DC9480084BEF4 /* libsqlite3.0.tbd in Frameworks */,
-				2DEEEAD41E766AD70089CE1F /* libSocialWeChat.a in Frameworks */,
-				2DEEEACF1E766AD70089CE1F /* TencentOpenAPI.framework in Frameworks */,
-				2DEEEAD91E766AD70089CE1F /* UMSocialCore.framework in Frameworks */,
 				2DEEEA4A1E76464A0089CE1F /* libicucore.tbd in Frameworks */,
 				2DEEEA481E7646400089CE1F /* libc++.1.tbd in Frameworks */,
-				2DEEEAD81E766AD70089CE1F /* libUMSocialLog.a in Frameworks */,
-				2DEEEAD21E766AD70089CE1F /* libWeiboSDK.a in Frameworks */,
 				2DEEEA461E7646370089CE1F /* libz.1.2.8.tbd in Frameworks */,
-				2DEEEAD11E766AD70089CE1F /* libSocialSina.a in Frameworks */,
 				2DEEEAE61E768B9F0089CE1F /* AVOSCloud.framework in Frameworks */,
-				2DEEEAD51E766AD70089CE1F /* libWeChatSDK.a in Frameworks */,
 				2D2C17061C8DC9600084BEF4 /* libz.1.1.3.tbd in Frameworks */,
 				2D2C17041C8DC95B0084BEF4 /* libstdc++.6.0.9.tbd in Frameworks */,
-				2DEEEADA1E766AD70089CE1F /* UMSocialNetwork.framework in Frameworks */,
 				2D2C16FA1C8DC9290084BEF4 /* libiconv.2.4.0.tbd in Frameworks */,
 				2D2C16F81C8DC91F0084BEF4 /* Security.framework in Frameworks */,
 				2DB2ED0A1C60F6B90080E41E /* libxml2.2.tbd in Frameworks */,
-				2DEEEADD1E766AD70089CE1F /* UShareUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,250 +904,8 @@
 		2DEEE9321E7402A30089CE1F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2DEEE9331E7402A30089CE1F /* Common */,
-				2DEEE9371E7402A30089CE1F /* Images */,
-				2DEEE9381E7402A30089CE1F /* Model */,
-				2DEEE9391E7402A30089CE1F /* Other */,
-				2DEEE93A1E7402A30089CE1F /* Request */,
-				2DEEE93B1E7402A30089CE1F /* View */,
-				2DEEE93C1E7402A30089CE1F /* ViewController */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		2DEEE9331E7402A30089CE1F /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEE9341E7402A30089CE1F /* Category */,
-				2DEEE9351E7402A30089CE1F /* Libs */,
-				2DEEE9361E7402A30089CE1F /* Tools */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		2DEEE9341E7402A30089CE1F /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		2DEEE9351E7402A30089CE1F /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEA351E763A080089CE1F /* RESideMenu */,
-				2DEEE9761E74442F0089CE1F /* SDWebImage */,
-				2DEEEAA61E766AD70089CE1F /* UMSocial */,
-				2DEEE9641E7444260089CE1F /* MBProgressHUD */,
-			);
-			path = Libs;
-			sourceTree = "<group>";
-		};
-		2DEEE9361E7402A30089CE1F /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		2DEEE9371E7402A30089CE1F /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		2DEEE9381E7402A30089CE1F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2DEEE9391E7402A30089CE1F /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		2DEEE93A1E7402A30089CE1F /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		2DEEE93B1E7402A30089CE1F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		2DEEE93C1E7402A30089CE1F /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		2DEEE9641E7444260089CE1F /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEE9651E7444260089CE1F /* LICENSE */,
-				2DEEE9661E7444260089CE1F /* MBProgressHUD.h */,
-				2DEEE9671E7444260089CE1F /* MBProgressHUD.m */,
-				2DEEE9681E7444260089CE1F /* README.mdown */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		2DEEE9761E74442F0089CE1F /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEE9771E74442F0089CE1F /* LICENSE */,
-				2DEEE9781E74442F0089CE1F /* README.md */,
-				2DEEE9791E74442F0089CE1F /* SDWebImage */,
-			);
-			path = SDWebImage;
-			sourceTree = "<group>";
-		};
-		2DEEE9791E74442F0089CE1F /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEE97A1E74442F0089CE1F /* NSData+ImageContentType.h */,
-				2DEEE97B1E74442F0089CE1F /* NSData+ImageContentType.m */,
-				2DEEE97C1E74442F0089CE1F /* SDImageCache.h */,
-				2DEEE97D1E74442F0089CE1F /* SDImageCache.m */,
-				2DEEE97E1E74442F0089CE1F /* SDWebImageCompat.h */,
-				2DEEE97F1E74442F0089CE1F /* SDWebImageCompat.m */,
-				2DEEE9801E74442F0089CE1F /* SDWebImageDecoder.h */,
-				2DEEE9811E74442F0089CE1F /* SDWebImageDecoder.m */,
-				2DEEE9821E74442F0089CE1F /* SDWebImageDownloader.h */,
-				2DEEE9831E74442F0089CE1F /* SDWebImageDownloader.m */,
-				2DEEE9841E74442F0089CE1F /* SDWebImageDownloaderOperation.h */,
-				2DEEE9851E74442F0089CE1F /* SDWebImageDownloaderOperation.m */,
-				2DEEE9861E74442F0089CE1F /* SDWebImageManager.h */,
-				2DEEE9871E74442F0089CE1F /* SDWebImageManager.m */,
-				2DEEE9881E74442F0089CE1F /* SDWebImageOperation.h */,
-				2DEEE9891E74442F0089CE1F /* SDWebImagePrefetcher.h */,
-				2DEEE98A1E74442F0089CE1F /* SDWebImagePrefetcher.m */,
-				2DEEE98B1E74442F0089CE1F /* UIButton+WebCache.h */,
-				2DEEE98C1E74442F0089CE1F /* UIButton+WebCache.m */,
-				2DEEE98D1E74442F0089CE1F /* UIImage+GIF.h */,
-				2DEEE98E1E74442F0089CE1F /* UIImage+GIF.m */,
-				2DEEE98F1E74442F0089CE1F /* UIImage+MultiFormat.h */,
-				2DEEE9901E74442F0089CE1F /* UIImage+MultiFormat.m */,
-				2DEEE9911E74442F0089CE1F /* UIImageView+HighlightedWebCache.h */,
-				2DEEE9921E74442F0089CE1F /* UIImageView+HighlightedWebCache.m */,
-				2DEEE9931E74442F0089CE1F /* UIImageView+WebCache.h */,
-				2DEEE9941E74442F0089CE1F /* UIImageView+WebCache.m */,
-				2DEEE9951E74442F0089CE1F /* UIView+WebCacheOperation.h */,
-				2DEEE9961E74442F0089CE1F /* UIView+WebCacheOperation.m */,
-			);
-			path = SDWebImage;
-			sourceTree = "<group>";
-		};
-		2DEEEA351E763A080089CE1F /* RESideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEA361E763A080089CE1F /* RECommonFunctions.h */,
-				2DEEEA371E763A080089CE1F /* RECommonFunctions.m */,
-				2DEEEA381E763A080089CE1F /* RESideMenu.h */,
-				2DEEEA391E763A080089CE1F /* RESideMenu.m */,
-				2DEEEA3A1E763A080089CE1F /* UIViewController+RESideMenu.h */,
-				2DEEEA3B1E763A080089CE1F /* UIViewController+RESideMenu.m */,
-			);
-			path = RESideMenu;
-			sourceTree = "<group>";
-		};
-		2DEEEAA61E766AD70089CE1F /* UMSocial */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEAA71E766AD70089CE1F /* SocialLibraries */,
-				2DEEEAC61E766AD70089CE1F /* UMSocialSDK */,
-				2DEEEACB1E766AD70089CE1F /* UMSocialUI */,
-			);
-			path = UMSocial;
-			sourceTree = "<group>";
-		};
-		2DEEEAA71E766AD70089CE1F /* SocialLibraries */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEAA81E766AD70089CE1F /* QQ */,
-				2DEEEAAD1E766AD70089CE1F /* Sina */,
-				2DEEEABD1E766AD70089CE1F /* WeChat */,
-			);
-			path = SocialLibraries;
-			sourceTree = "<group>";
-		};
-		2DEEEAA81E766AD70089CE1F /* QQ */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEAA91E766AD70089CE1F /* libSocialQQ.a */,
-				2DEEEAAA1E766AD70089CE1F /* TencentOpenAPI.framework */,
-				2DEEEAAB1E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle */,
-				2DEEEAAC1E766AD70089CE1F /* UMSocialQQHandler.h */,
-			);
-			path = QQ;
-			sourceTree = "<group>";
-		};
-		2DEEEAAD1E766AD70089CE1F /* Sina */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEAAE1E766AD70089CE1F /* libSocialSina.a */,
-				2DEEEAAF1E766AD70089CE1F /* libWeiboSDK.a */,
-				2DEEEAB01E766AD70089CE1F /* UMSocialSinaHandler.h */,
-				2DEEEAB11E766AD70089CE1F /* WBHttpRequest+WeiboGame.h */,
-				2DEEEAB21E766AD70089CE1F /* WBHttpRequest+WeiboShare.h */,
-				2DEEEAB31E766AD70089CE1F /* WBHttpRequest+WeiboToken.h */,
-				2DEEEAB41E766AD70089CE1F /* WBHttpRequest+WeiboUser.h */,
-				2DEEEAB51E766AD70089CE1F /* WBHttpRequest.h */,
-				2DEEEAB61E766AD70089CE1F /* WBSDKBasicButton.h */,
-				2DEEEAB71E766AD70089CE1F /* WBSDKCommentButton.h */,
-				2DEEEAB81E766AD70089CE1F /* WBSDKRelationshipButton.h */,
-				2DEEEAB91E766AD70089CE1F /* WeiboSDK+Statistics.h */,
-				2DEEEABA1E766AD70089CE1F /* WeiboSDK.bundle */,
-				2DEEEABB1E766AD70089CE1F /* WeiboSDK.h */,
-				2DEEEABC1E766AD70089CE1F /* WeiboUser.h */,
-			);
-			path = Sina;
-			sourceTree = "<group>";
-		};
-		2DEEEABD1E766AD70089CE1F /* WeChat */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEABE1E766AD70089CE1F /* libSocialWeChat.a */,
-				2DEEEABF1E766AD70089CE1F /* libWeChatSDK.a */,
-				2DEEEAC01E766AD70089CE1F /* read_me.txt */,
-				2DEEEAC11E766AD70089CE1F /* README.txt */,
-				2DEEEAC21E766AD70089CE1F /* UMSocialWechatHandler.h */,
-				2DEEEAC31E766AD70089CE1F /* WechatAuthSDK.h */,
-				2DEEEAC41E766AD70089CE1F /* WXApi.h */,
-				2DEEEAC51E766AD70089CE1F /* WXApiObject.h */,
-			);
-			path = WeChat;
-			sourceTree = "<group>";
-		};
-		2DEEEAC61E766AD70089CE1F /* UMSocialSDK */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEAC71E766AD70089CE1F /* libUMSocialLog.a */,
-				2DEEEAC81E766AD70089CE1F /* UMSocialCore.framework */,
-				2DEEEAC91E766AD70089CE1F /* UMSocialNetwork.framework */,
-				2DEEEACA1E766AD70089CE1F /* UMSocialSDKPromptResources.bundle */,
-			);
-			path = UMSocialSDK;
-			sourceTree = "<group>";
-		};
-		2DEEEACB1E766AD70089CE1F /* UMSocialUI */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEEACC1E766AD70089CE1F /* UMSocialSDKResources.bundle */,
-				2DEEEACD1E766AD70089CE1F /* UShareUI.framework */,
-			);
-			path = UMSocialUI;
 			sourceTree = "<group>";
 		};
 		2DEEEAE41E768B6D0089CE1F /* Frameworks */ = {
@@ -1405,7 +1041,6 @@
 				2D1BCC531C892CCB004637C6 /* 密码.png in Resources */,
 				2D1BCC281C8864CE004637C6 /* 笑脸.png in Resources */,
 				2D1BCC541C892CCB004637C6 /* 确认密码.png in Resources */,
-				2DEEEAD01E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				2D1A0DC21C8F0D050041BE85 /* 开机画面123.png in Resources */,
 				2D1A0DC01C8F09E30041BE85 /* 分享.png in Resources */,
 				2D1BCC091C88410E004637C6 /* list1.png in Resources */,
@@ -1416,9 +1051,7 @@
 				2D1BCC551C892CCB004637C6 /* 手机号.png in Resources */,
 				2D1A0DBE1C8F09C30041BE85 /* 列表.png in Resources */,
 				2D22DF961CA5144A00D323B0 /* 列表背景.png in Resources */,
-				2DEEEAD71E766AD70089CE1F /* README.txt in Resources */,
 				2D1A0DC41C8F10810041BE85 /* qq图标.png in Resources */,
-				2DEEEADB1E766AD70089CE1F /* UMSocialSDKPromptResources.bundle in Resources */,
 				2D1BCC361C887E2D004637C6 /* 注销.png in Resources */,
 				2D1BCC341C887DC2004637C6 /* 登录.png in Resources */,
 				2D22DF941CA513FC00D323B0 /* 右抽屉背景.png in Resources */,
@@ -1429,7 +1062,6 @@
 				2D1065521C85A50B005C5667 /* desktop.png in Resources */,
 				2D22DF921CA5139D00D323B0 /* 我的收藏背景.png in Resources */,
 				2D1A0DC61C8F10DB0041BE85 /* sina图标.png in Resources */,
-				2DEEE9691E7444260089CE1F /* LICENSE in Resources */,
 				2D1A0DBC1C8F09B70041BE85 /* 用户.png in Resources */,
 				2D7A97431C91171E00A81AB2 /* code_1.plist in Resources */,
 				2D1BCC381C887F54004637C6 /* 收藏.png in Resources */,
@@ -1441,19 +1073,15 @@
 				2D99C2D61C9059A30035025A /* cityList.plist in Resources */,
 				2D99C2D71C9059A30035025A /* ProvinceCity.plist in Resources */,
 				2D1BCC491C888DD3004637C6 /* 返回.png in Resources */,
-				2DEEEA011E74442F0089CE1F /* LICENSE in Resources */,
 				2D1A0D871C8EEA450041BE85 /* 登录背景.jpeg in Resources */,
 				2D1BCC1A1C884EA5004637C6 /* 天下通 2.png in Resources */,
 				2D1BCC571C892CCB004637C6 /* 邮箱.png in Resources */,
-				2DEEEAD61E766AD70089CE1F /* read_me.txt in Resources */,
 				2D99C2E21C908E540035025A /* Property List.plist in Resources */,
 				2D1BCC331C887DC2004637C6 /* 注册.png in Resources */,
 				2D1BCC221C884F3B004637C6 /* 天下通 4.png in Resources */,
 				2D1BCC6A1C89A745004637C6 /* 为收藏.png in Resources */,
 				2D51470A1C8AD8BB007A3C7F /* MJRefresh.bundle in Resources */,
-				2DEEEADC1E766AD70089CE1F /* UMSocialSDKResources.bundle in Resources */,
 				2DB2EC8E1C60863B0080E41E /* Main.storyboard in Resources */,
-				2DEEEAD31E766AD70089CE1F /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1482,66 +1110,46 @@
 				2D5147011C8AD8BB007A3C7F /* MJRefreshAutoGifFooter.m in Sources */,
 				2D99C2D31C9058C80035025A /* PickViewController.m in Sources */,
 				2D5147031C8AD8BB007A3C7F /* MJRefreshAutoStateFooter.m in Sources */,
-				2DEEEA071E74442F0089CE1F /* SDWebImageDownloader.m in Sources */,
 				2D1BCC3E1C8882FD004637C6 /* LoginViewController.m in Sources */,
 				2D10653E1C85254A005C5667 /* ImageTableViewCell.m in Sources */,
-				2DEEEA101E74442F0089CE1F /* UIView+WebCacheOperation.m in Sources */,
-				2DEEE96A1E7444260089CE1F /* MBProgressHUD.m in Sources */,
 				2D036D981C7871A8001B1563 /* FirstDetilModel.m in Sources */,
 				2D07FFF31C847E0700D4826E /* RootViewController.m in Sources */,
-				2DEEEA0D1E74442F0089CE1F /* UIImage+MultiFormat.m in Sources */,
 				2D2105641C86D532001EE90A /* NSDictionary+PrintChinese.m in Sources */,
 				2D1BCC5F1C898FE6004637C6 /* DataBase.m in Sources */,
 				2D5146FD1C8AD8BB007A3C7F /* MJRefreshComponent.m in Sources */,
-				2DEEEA0C1E74442F0089CE1F /* UIImage+GIF.m in Sources */,
 				2D99C2E01C905C320035025A /* CityModel.m in Sources */,
 				2D1065591C85BD56005C5667 /* Choose.m in Sources */,
 				2D5147001C8AD8BB007A3C7F /* ColorWithHex.m in Sources */,
-				2DEEEA0E1E74442F0089CE1F /* UIImageView+HighlightedWebCache.m in Sources */,
-				2DEEEA061E74442F0089CE1F /* SDWebImageDecoder.m in Sources */,
 				2D51470D1C8AD8BB007A3C7F /* UIScrollView+MJRefresh.m in Sources */,
-				2DEEEA031E74442F0089CE1F /* NSData+ImageContentType.m in Sources */,
 				2D51470C1C8AD8BB007A3C7F /* UIScrollView+MJExtension.m in Sources */,
 				2D5147071C8AD8BB007A3C7F /* MJRefreshGifHeader.m in Sources */,
 				2D21055D1C86D447001EE90A /* AllListName.m in Sources */,
-				2DEEE96B1E7444260089CE1F /* README.mdown in Sources */,
 				2D5147091C8AD8BB007A3C7F /* MJRefreshStateHeader.m in Sources */,
 				2D5146FF1C8AD8BB007A3C7F /* MJRefreshHeader.m in Sources */,
 				2D5147051C8AD8BB007A3C7F /* MJRefreshBackNormalFooter.m in Sources */,
 				2DB2EC8B1C60863B0080E41E /* ViewController.m in Sources */,
-				2DEEEA3C1E763A080089CE1F /* RECommonFunctions.m in Sources */,
 				2D1BCC631C89A325004637C6 /* CollectionViewController.m in Sources */,
-				2DEEEA3E1E763A080089CE1F /* UIViewController+RESideMenu.m in Sources */,
 				2D1065431C853DFC005C5667 /* WebViewTableViewCell.m in Sources */,
 				2D2105631C86D532001EE90A /* NSArray+PrintChinese.m in Sources */,
 				2D1BCC411C888307004637C6 /* RegViewController.m in Sources */,
-				2DEEEA091E74442F0089CE1F /* SDWebImageManager.m in Sources */,
 				2D5146FC1C8AD8BB007A3C7F /* MJRefreshBackFooter.m in Sources */,
-				2DEEEA0F1E74442F0089CE1F /* UIImageView+WebCache.m in Sources */,
 				2D2105101C867354001EE90A /* ListViewController.m in Sources */,
-				2DEEEA0A1E74442F0089CE1F /* SDWebImagePrefetcher.m in Sources */,
-				2DEEEA0B1E74442F0089CE1F /* UIButton+WebCache.m in Sources */,
 				2D2105141C8695A9001EE90A /* ListCollectionViewCell.m in Sources */,
 				2D07FFF71C84909200D4826E /* TitleTableViewCell.m in Sources */,
 				2DB2ED071C60F68F0080E41E /* GDataXMLNode.m in Sources */,
 				2D5147081C8AD8BB007A3C7F /* MJRefreshNormalHeader.m in Sources */,
-				2DEEEA3D1E763A080089CE1F /* RESideMenu.m in Sources */,
 				2D5147021C8AD8BB007A3C7F /* MJRefreshAutoNormalFooter.m in Sources */,
 				2D51470E1C8AD8BB007A3C7F /* UIView+MJExtension.m in Sources */,
 				2D2C16F61C8D8DB30084BEF4 /* ThreeImageTableViewCell.m in Sources */,
 				2DB2ED081C60F68F0080E41E /* Reachability.m in Sources */,
 				2D1BCC261C8850DC004637C6 /* RightViewController.m in Sources */,
-				2DEEEA021E74442F0089CE1F /* README.md in Sources */,
 				2DB2EC881C60863B0080E41E /* AppDelegate.m in Sources */,
 				2DB2ECBE1C60A6D70080E41E /* FirstViewController.m in Sources */,
 				2D5147061C8AD8BB007A3C7F /* MJRefreshBackStateFooter.m in Sources */,
 				2DB2ECBB1C60A6CA0080E41E /* FirstTableViewCell.m in Sources */,
 				2D07FFEC1C847CE400D4826E /* LeftViewController.m in Sources */,
 				2D5147041C8AD8BB007A3C7F /* MJRefreshBackGifFooter.m in Sources */,
-				2DEEEA051E74442F0089CE1F /* SDWebImageCompat.m in Sources */,
 				2DB2ECC11C60A6E70080E41E /* FirstDetailViewController.m in Sources */,
-				2DEEEA041E74442F0089CE1F /* SDImageCache.m in Sources */,
-				2DEEEA081E74442F0089CE1F /* SDWebImageDownloaderOperation.m in Sources */,
 				2D51470B1C8AD8BB007A3C7F /* MJRefreshConst.m in Sources */,
 				2D5146FB1C8AD8BB007A3C7F /* MJRefreshAutoFooter.m in Sources */,
 				2DB2EC851C60863B0080E41E /* main.m in Sources */,
