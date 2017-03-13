@@ -2,8 +2,8 @@
 //  ViewController.m
 //  WorldKnow
 //
-//  Created by 张福润 on 2017/3/13.
-//  Copyright © 2017年 张福润. All rights reserved.
+//  Created by 张福润 on 16/2/2.
+//  Copyright © 2016年 张福润. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -19,11 +19,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
