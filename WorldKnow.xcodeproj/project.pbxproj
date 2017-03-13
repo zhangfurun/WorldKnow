@@ -105,10 +105,6 @@
 				2DEEF4011E76DCD30089CE1F /* AppDelegate.m */,
 				2DEEF4031E76DCD30089CE1F /* ViewController.h */,
 				2DEEF4041E76DCD30089CE1F /* ViewController.m */,
-				2DEEF4061E76DCD30089CE1F /* Main.storyboard */,
-				2DEEF4091E76DCD30089CE1F /* Assets.xcassets */,
-				2DEEF40B1E76DCD30089CE1F /* LaunchScreen.storyboard */,
-				2DEEF40E1E76DCD30089CE1F /* Info.plist */,
 				2DEEF3FD1E76DCD30089CE1F /* Supporting Files */,
 			);
 			path = WorldKnow;
@@ -117,6 +113,10 @@
 		2DEEF3FD1E76DCD30089CE1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2DEEF4061E76DCD30089CE1F /* Main.storyboard */,
+				2DEEF4091E76DCD30089CE1F /* Assets.xcassets */,
+				2DEEF40B1E76DCD30089CE1F /* LaunchScreen.storyboard */,
+				2DEEF40E1E76DCD30089CE1F /* Info.plist */,
 				2DEEF3FE1E76DCD30089CE1F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -516,6 +516,7 @@
 				2DEEF4291E76DCD30089CE1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DEEF42A1E76DCD30089CE1F /* Build configuration list for PBXNativeTarget "WorldKnowTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +525,7 @@
 				2DEEF42C1E76DCD30089CE1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DEEF42D1E76DCD30089CE1F /* Build configuration list for PBXNativeTarget "WorldKnowUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +534,7 @@
 				2DEEF42F1E76DCD30089CE1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
