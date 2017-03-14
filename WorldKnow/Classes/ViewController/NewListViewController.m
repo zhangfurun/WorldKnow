@@ -8,13 +8,14 @@
 
 #import "NewListViewController.h"
 
-#import "FirstTableViewCell.h"
-#import "FirstModel.h"
+#import "NewListViewController.h"
+#import "NewsListItem.h"
 #import "UIImageView+WebCache.h"
 #define CELLID @"cell_id_first"
 #import "Choose.h"
 #import "MJRefresh.h"
-#import "ThreeImageTableViewCell.h"
+#import "NewsImagesCell.h"
+#import "NewsDetaultCell.h"
 
 
 
@@ -96,7 +97,7 @@
             
             for(NSDictionary *dealsDic in dicJSON[sender]){
                 
-                FirstModel *model=[[FirstModel alloc]init];
+                NewsListItem *model=[[NewsListItem alloc]init];
                 [model setValuesForKeysWithDictionary:dealsDic];
                 
                 //
@@ -226,10 +227,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     //点击cell
     if ([segue.identifier isEqualToString:@"segue_news"]||[segue.identifier isEqualToString:@"segue_image"]){
-        FirstTableViewCell *cell = (FirstTableViewCell *)sender;
+        NewsDetaultCell *cell = (NewsDetaultCell *)sender;
         NSIndexPath *index = [self.tableView indexPathForCell:cell];
         id des = segue.destinationViewController;
-        FirstModel *model=self.arrayAllData[index.row] ;
+        NewsListItem *model=self.arrayAllData[index.row] ;
         [des setValue:model.docid forKey:@"postid"];
         [des setValue:model forKey:@"model"];
     }
@@ -237,7 +238,7 @@
     else{
         //点击轮播图
         if([segue.identifier isEqualToString:@"segue_header"]){
-            FirstModel *model=[[FirstModel alloc]init];
+            NewsListItem *model=[[NewsListItem alloc]init];
             int a=((int)self.scrollView.contentOffset.x)%(self.arrToutiao.count*(int)kWith)/(int)kWith;
             [model setValuesForKeysWithDictionary: self.arrToutiao[a]];
             
@@ -288,10 +289,10 @@
 }
 #pragma mark - cell
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FirstTableViewCell *cell_a = [tableView dequeueReusableCellWithIdentifier:CELLID ];
-    ThreeImageTableViewCell *cell_b=[tableView dequeueReusableCellWithIdentifier:@"cell_id_threeImage"  ];
+    NewsDetaultCell *cell_a = [tableView dequeueReusableCellWithIdentifier:CELLID ];
+    NewsImagesCell *cell_b=[tableView dequeueReusableCellWithIdentifier:@"cell_id_threeImage"  ];
     
-    FirstModel *model =self.arrayAllData[indexPath.row];
+    NewsListItem *model =self.arrayAllData[indexPath.row];
     if(model.imgextra.count>0){
         cell_b.labelTitle.text=model.title;
         cell_b.labelTie.text=[NSString stringWithFormat:@"%@回复",model.replyCount];
@@ -315,7 +316,7 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FirstModel *model =self.arrayAllData[indexPath.row];
+    NewsListItem *model =self.arrayAllData[indexPath.row];
     if(model.imgextra.count>0){
         return 126;
     }

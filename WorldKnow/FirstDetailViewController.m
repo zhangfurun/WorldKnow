@@ -90,7 +90,7 @@
     if(userName){
         [[DataBase shareDataBase]openDBWithTable:userName];
       NSArray *arr= [[DataBase shareDataBase]selectWithTableName:userName];
-        for(FirstModel *model in arr){
+        for(NewsListItem *model in arr){
             if([model.postid isEqualToString:self.model.postid]){
                 [self.itemCollection setImage:[UIImage imageNamed:@"已收藏"]];
             }

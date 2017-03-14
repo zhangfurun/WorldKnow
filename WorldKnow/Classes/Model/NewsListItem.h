@@ -1,14 +1,14 @@
 //
-//  FirstModel.h
+//  NewsListItem.h
 //  WorldKnow
 //
-//  Created by 张福润 on 16/2/3.
-//  Copyright © 2016年 张福润. All rights reserved.
+//  Created by 张福润 on 2017/3/14.
+//  Copyright © 2017年 张福润. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface FirstModel : NSObject
+@interface NewsListItem : NSObject
 ///唯一标示id
 @property (nonatomic,strong)NSString * postid;
 ///图片地址

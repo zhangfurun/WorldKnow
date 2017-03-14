@@ -43,7 +43,7 @@
     NSUserDefaults *user=[NSUserDefaults standardUserDefaults];
     NSString *userName=[user valueForKey:@"userName"];
     if(userName){
-        FirstModel *model=self.arrayAlldata[indexPath.row];
+        NewsListItem *model=self.arrayAlldata[indexPath.row];
         [[DataBase shareDataBase]delecteWithPocid:model.postid tableName:userName];
         [self.arrayAlldata removeObjectAtIndex:indexPath.row];
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
@@ -81,7 +81,7 @@
     if(!cell){
         cell=[[UITableViewCell alloc]initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:@"cell_id_collection"];
     }
-    FirstModel *model=self.arrayAlldata[indexPath.row];
+    NewsListItem *model=self.arrayAlldata[indexPath.row];
     cell.textLabel.text=model.ltitle;
     cell.detailTextLabel.text=model.digest;
     cell.backgroundColor=[UIColor clearColor];
@@ -112,7 +112,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
     id des = segue.destinationViewController;
-    FirstModel *model=self.arrayAlldata[index.row];
+    NewsListItem *model=self.arrayAlldata[index.row];
      NSLog(@"model.postid=%@",model.postid);
     [des setValue:model.postid forKey:@"postid"];
 }

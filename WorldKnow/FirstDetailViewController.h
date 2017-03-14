@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FirstModel.h"
+#import "NewsListItem.h"
 #import "FirstDetilModel.h"
 @interface FirstDetailViewController : UIViewController
-@property (nonatomic,strong)FirstModel * model;
+@property (nonatomic,strong)NewsListItem * model;
 
 ///当前数据Model
 @property (nonatomic,strong)FirstDetilModel * detilModel;
