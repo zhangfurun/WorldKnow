@@ -8,9 +8,11 @@
 
 #import "AppDelegate.h"
 #import <UMSocialCore/UMSocialCore.h>
-//#import "UMSocialSinaSSOHandler.h"
-//#import "UMSocialQQHandler.h"
-//#import "UMSocialWechatHandler.h"
+
+#import "LeftViewController.h"
+#import "RightViewController.h"
+#import "NewListViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,21 +22,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [NSThread sleepForTimeInterval:1.0];
+    [self setBaseViewController];
     //LeanCloud
     [AVOSCloud setApplicationId:APPID
                       clientKey:APPKEY];
     //友盟
      [[UMSocialManager defaultManager] setUmSocialAppkey:YMAPPID];
+    
     [self configUSharePlatforms];
     
     [self confitUShareSettings];
-    //新浪
-
-//    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:SINAAPPID secret:SINAAPPSECRET RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
-//    //qq
-//    [UMSocialQQHandler setQQWithAppId:QQAPPID10 appKey:QQAPPKEY url:@"http://www.umeng.com/social"];
-//    //微信
-//    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.umeng.com/social"];
     return YES;
 }
 
@@ -56,6 +53,7 @@
     //[UMSocialGlobal shareInstance].isUsingHttpsWhenShareContent = NO;
     
 }
+
 
 - (void)configUSharePlatforms
 {
@@ -111,6 +109,48 @@
     NSUserDefaults *user=[[NSUserDefaults alloc]init];
     [user removeObjectForKey:@"choose"];
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Methods
+- (void)setBaseViewController {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[NewListViewController alloc] init]];
+    LeftViewController *leftMenuViewController = [[LeftViewController alloc] init];
+    RightViewController *rightMenuViewController = [[RightViewController alloc] init];
+    
+    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
+                                                                    leftMenuViewController:leftMenuViewController
+                                                                   rightMenuViewController:rightMenuViewController];
+    sideMenuViewController.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
+    sideMenuViewController.delegate = self;
+    sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
+    sideMenuViewController.contentViewShadowOffset = CGSizeMake(0, 0);
+    sideMenuViewController.contentViewShadowOpacity = 0.6;
+    sideMenuViewController.contentViewShadowRadius = 12;
+    sideMenuViewController.contentViewShadowEnabled = YES;
+    self.window.rootViewController = sideMenuViewController;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
+}
+
+#pragma mark - RESideMenu Delegate
+- (void)sideMenu:(RESideMenu *)sideMenu willShowMenuViewController:(UIViewController *)menuViewController {
+    NSLog(@"willShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu didShowMenuViewController:(UIViewController *)menuViewController {
+    NSLog(@"didShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu willHideMenuViewController:(UIViewController *)menuViewController {
+    NSLog(@"willHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu didHideMenuViewController:(UIViewController *)menuViewController {
+    NSLog(@"didHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
 }
 
 @end

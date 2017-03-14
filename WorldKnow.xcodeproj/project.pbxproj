@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		157B11C81E7802DF00A36084 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B11C61E7802DF00A36084 /* HomeViewController.m */; };
-		157B11C91E7802DF00A36084 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157B11C71E7802DF00A36084 /* HomeViewController.xib */; };
 		157B11CD1E7804F400A36084 /* NewListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B11CB1E7804F400A36084 /* NewListViewController.m */; };
 		157B11CE1E7804F400A36084 /* NewListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157B11CC1E7804F400A36084 /* NewListViewController.xib */; };
-		157B11D51E78052B00A36084 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B11D31E78052B00A36084 /* LeftViewController.m */; };
-		157B11D61E78052B00A36084 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157B11D41E78052B00A36084 /* LeftViewController.xib */; };
-		157B11DA1E78053600A36084 /* RightViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B11D81E78053600A36084 /* RightViewViewController.m */; };
-		157B11DB1E78053600A36084 /* RightViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157B11D91E78053600A36084 /* RightViewViewController.xib */; };
+		157B11E41E7808FB00A36084 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B11E21E7808FB00A36084 /* LeftViewController.m */; };
+		157B11E51E7808FB00A36084 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157B11E31E7808FB00A36084 /* LeftViewController.xib */; };
+		157B11EE1E78094900A36084 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B11EC1E78094900A36084 /* RightViewController.m */; };
+		157B11EF1E78094900A36084 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157B11ED1E78094900A36084 /* RightViewController.xib */; };
 		2D036D981C7871A8001B1563 /* FirstDetilModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D036D971C7871A8001B1563 /* FirstDetilModel.m */; };
-		2D07FFEC1C847CE400D4826E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07FFEB1C847CE400D4826E /* LeftViewController.m */; };
-		2D07FFF31C847E0700D4826E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07FFF21C847E0700D4826E /* RootViewController.m */; };
 		2D07FFF71C84909200D4826E /* TitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07FFF61C84909200D4826E /* TitleTableViewCell.m */; };
 		2D10653E1C85254A005C5667 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10653D1C85254A005C5667 /* ImageTableViewCell.m */; };
 		2D1065431C853DFC005C5667 /* WebViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1065421C853DFC005C5667 /* WebViewTableViewCell.m */; };
@@ -39,7 +35,6 @@
 		2D1BCC201C884F3B004637C6 /* 天下通 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BCC1D1C884F3B004637C6 /* 天下通 5.png */; };
 		2D1BCC211C884F3B004637C6 /* 天下通 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BCC1E1C884F3B004637C6 /* 天下通 6.png */; };
 		2D1BCC221C884F3B004637C6 /* 天下通 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BCC1F1C884F3B004637C6 /* 天下通 4.png */; };
-		2D1BCC261C8850DC004637C6 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BCC251C8850DC004637C6 /* RightViewController.m */; };
 		2D1BCC281C8864CE004637C6 /* 笑脸.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BCC271C8864CE004637C6 /* 笑脸.png */; };
 		2D1BCC331C887DC2004637C6 /* 注册.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BCC311C887DC2004637C6 /* 注册.png */; };
 		2D1BCC341C887DC2004637C6 /* 登录.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BCC321C887DC2004637C6 /* 登录.png */; };
@@ -185,24 +180,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		157B11C51E7802DF00A36084 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		157B11C61E7802DF00A36084 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		157B11C71E7802DF00A36084 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		157B11CA1E7804F400A36084 /* NewListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewListViewController.h; sourceTree = "<group>"; };
 		157B11CB1E7804F400A36084 /* NewListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewListViewController.m; sourceTree = "<group>"; };
 		157B11CC1E7804F400A36084 /* NewListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewListViewController.xib; sourceTree = "<group>"; };
-		157B11D21E78052B00A36084 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
-		157B11D31E78052B00A36084 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
-		157B11D41E78052B00A36084 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
-		157B11D71E78053600A36084 /* RightViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewViewController.h; sourceTree = "<group>"; };
-		157B11D81E78053600A36084 /* RightViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewViewController.m; sourceTree = "<group>"; };
-		157B11D91E78053600A36084 /* RightViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewViewController.xib; sourceTree = "<group>"; };
+		157B11E11E7808FB00A36084 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		157B11E21E7808FB00A36084 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		157B11E31E7808FB00A36084 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		157B11EB1E78094900A36084 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		157B11EC1E78094900A36084 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		157B11ED1E78094900A36084 /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
 		2D036D961C7871A8001B1563 /* FirstDetilModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetilModel.h; sourceTree = "<group>"; };
 		2D036D971C7871A8001B1563 /* FirstDetilModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetilModel.m; sourceTree = "<group>"; };
-		2D07FFEA1C847CE400D4826E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
-		2D07FFEB1C847CE400D4826E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
-		2D07FFF11C847E0700D4826E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		2D07FFF21C847E0700D4826E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		2D07FFF51C84909200D4826E /* TitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleTableViewCell.h; sourceTree = "<group>"; };
 		2D07FFF61C84909200D4826E /* TitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleTableViewCell.m; sourceTree = "<group>"; };
 		2D10653C1C85254A005C5667 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
@@ -228,8 +216,6 @@
 		2D1BCC1D1C884F3B004637C6 /* 天下通 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天下通 5.png"; sourceTree = "<group>"; };
 		2D1BCC1E1C884F3B004637C6 /* 天下通 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天下通 6.png"; sourceTree = "<group>"; };
 		2D1BCC1F1C884F3B004637C6 /* 天下通 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天下通 4.png"; sourceTree = "<group>"; };
-		2D1BCC241C8850DC004637C6 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
-		2D1BCC251C8850DC004637C6 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
 		2D1BCC271C8864CE004637C6 /* 笑脸.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "笑脸.png"; sourceTree = "<group>"; };
 		2D1BCC311C887DC2004637C6 /* 注册.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "注册.png"; sourceTree = "<group>"; };
 		2D1BCC321C887DC2004637C6 /* 登录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录.png"; sourceTree = "<group>"; };
@@ -513,7 +499,7 @@
 			children = (
 				157B11D11E78051400A36084 /* RightViewController */,
 				157B11D01E78050700A36084 /* LeftViewController */,
-				157B11CF1E7804FD00A36084 /* HomeViewController */,
+				157B11CF1E7804FD00A36084 /* NewsViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -540,25 +526,22 @@
 			path = Classes/DataSource;
 			sourceTree = "<group>";
 		};
-		157B11CF1E7804FD00A36084 /* HomeViewController */ = {
+		157B11CF1E7804FD00A36084 /* NewsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				157B11C51E7802DF00A36084 /* HomeViewController.h */,
-				157B11C61E7802DF00A36084 /* HomeViewController.m */,
-				157B11C71E7802DF00A36084 /* HomeViewController.xib */,
 				157B11CA1E7804F400A36084 /* NewListViewController.h */,
 				157B11CB1E7804F400A36084 /* NewListViewController.m */,
 				157B11CC1E7804F400A36084 /* NewListViewController.xib */,
 			);
-			name = HomeViewController;
+			name = NewsViewController;
 			sourceTree = "<group>";
 		};
 		157B11D01E78050700A36084 /* LeftViewController */ = {
 			isa = PBXGroup;
 			children = (
-				157B11D21E78052B00A36084 /* LeftViewController.h */,
-				157B11D31E78052B00A36084 /* LeftViewController.m */,
-				157B11D41E78052B00A36084 /* LeftViewController.xib */,
+				157B11E11E7808FB00A36084 /* LeftViewController.h */,
+				157B11E21E7808FB00A36084 /* LeftViewController.m */,
+				157B11E31E7808FB00A36084 /* LeftViewController.xib */,
 			);
 			name = LeftViewController;
 			sourceTree = "<group>";
@@ -566,11 +549,18 @@
 		157B11D11E78051400A36084 /* RightViewController */ = {
 			isa = PBXGroup;
 			children = (
-				157B11D71E78053600A36084 /* RightViewViewController.h */,
-				157B11D81E78053600A36084 /* RightViewViewController.m */,
-				157B11D91E78053600A36084 /* RightViewViewController.xib */,
+				157B11EB1E78094900A36084 /* RightViewController.h */,
+				157B11EC1E78094900A36084 /* RightViewController.m */,
+				157B11ED1E78094900A36084 /* RightViewController.xib */,
 			);
 			name = RightViewController;
+			sourceTree = "<group>";
+		};
+		157B11F01E780AE800A36084 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		2D07FF8A1C842E8C00D4826E /* 详情 */ = {
@@ -601,8 +591,6 @@
 			isa = PBXGroup;
 			children = (
 				2D99C2D01C9058B60035025A /* pick */,
-				2D07FFEA1C847CE400D4826E /* LeftViewController.h */,
-				2D07FFEB1C847CE400D4826E /* LeftViewController.m */,
 				2D21050D1C86733C001EE90A /* 列表选择 */,
 			);
 			name = Left;
@@ -611,8 +599,6 @@
 		2D07FFF01C847D5700D4826E /* RootManager */ = {
 			isa = PBXGroup;
 			children = (
-				2D07FFF11C847E0700D4826E /* RootViewController.h */,
-				2D07FFF21C847E0700D4826E /* RootViewController.m */,
 			);
 			name = RootManager;
 			sourceTree = "<group>";
@@ -797,8 +783,6 @@
 		2D1BCC231C885045004637C6 /* Right */ = {
 			isa = PBXGroup;
 			children = (
-				2D1BCC241C8850DC004637C6 /* RightViewController.h */,
-				2D1BCC251C8850DC004637C6 /* RightViewController.m */,
 			);
 			name = Right;
 			sourceTree = "<group>";
@@ -1011,18 +995,10 @@
 		2DEEE9331E7402A30089CE1F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2DEEE9341E7402A30089CE1F /* Category */,
+				157B11F01E780AE800A36084 /* Tools */,
 				2DEEE9351E7402A30089CE1F /* Libs */,
-				2DEEE9361E7402A30089CE1F /* Tools */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		2DEEE9341E7402A30089CE1F /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		2DEEE9351E7402A30089CE1F /* Libs */ = {
@@ -1037,13 +1013,6 @@
 				2DEEE9641E7444260089CE1F /* MBProgressHUD */,
 			);
 			path = Libs;
-			sourceTree = "<group>";
-		};
-		2DEEE9361E7402A30089CE1F /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		2DEEE9391E7402A30089CE1F /* Other */ = {
@@ -1462,7 +1431,7 @@
 			files = (
 				2D1BCC531C892CCB004637C6 /* 密码.png in Resources */,
 				2D1BCC281C8864CE004637C6 /* 笑脸.png in Resources */,
-				157B11D61E78052B00A36084 /* LeftViewController.xib in Resources */,
+				157B11E51E7808FB00A36084 /* LeftViewController.xib in Resources */,
 				2D1BCC541C892CCB004637C6 /* 确认密码.png in Resources */,
 				2DEEEAD01E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				2D1A0DC21C8F0D050041BE85 /* 开机画面123.png in Resources */,
@@ -1488,7 +1457,7 @@
 				2D1065521C85A50B005C5667 /* desktop.png in Resources */,
 				2D22DF921CA5139D00D323B0 /* 我的收藏背景.png in Resources */,
 				2D1A0DC61C8F10DB0041BE85 /* sina图标.png in Resources */,
-				157B11DB1E78053600A36084 /* RightViewViewController.xib in Resources */,
+				157B11EF1E78094900A36084 /* RightViewController.xib in Resources */,
 				2DEEE9691E7444260089CE1F /* LICENSE in Resources */,
 				2D1A0DBC1C8F09B70041BE85 /* 用户.png in Resources */,
 				2D7A97431C91171E00A81AB2 /* code_1.plist in Resources */,
@@ -1501,7 +1470,6 @@
 				2D1BCC6B1C89A745004637C6 /* 已收藏.png in Resources */,
 				2D99C2D61C9059A30035025A /* cityList.plist in Resources */,
 				2D99C2D71C9059A30035025A /* ProvinceCity.plist in Resources */,
-				157B11C91E7802DF00A36084 /* HomeViewController.xib in Resources */,
 				2D1BCC491C888DD3004637C6 /* 返回.png in Resources */,
 				2DEEEA011E74442F0089CE1F /* LICENSE in Resources */,
 				2D1A0D871C8EEA450041BE85 /* 登录背景.jpeg in Resources */,
@@ -1551,7 +1519,7 @@
 				2DEEE96A1E7444260089CE1F /* MBProgressHUD.m in Sources */,
 				2DEEFA0D1E7700D10089CE1F /* MJRefreshComponent.m in Sources */,
 				2D036D981C7871A8001B1563 /* FirstDetilModel.m in Sources */,
-				2D07FFF31C847E0700D4826E /* RootViewController.m in Sources */,
+				157B11E41E7808FB00A36084 /* LeftViewController.m in Sources */,
 				2DEEEA0D1E74442F0089CE1F /* UIImage+MultiFormat.m in Sources */,
 				2DEEFA0E1E7700D10089CE1F /* MJRefreshFooter.m in Sources */,
 				2DEEFA0F1E7700D10089CE1F /* MJRefreshHeader.m in Sources */,
@@ -1560,7 +1528,6 @@
 				2DEEFA0C1E7700D10089CE1F /* MJRefreshBackFooter.m in Sources */,
 				2DEEEA0C1E74442F0089CE1F /* UIImage+GIF.m in Sources */,
 				2D99C2E01C905C320035025A /* CityModel.m in Sources */,
-				157B11DA1E78053600A36084 /* RightViewViewController.m in Sources */,
 				2D1065591C85BD56005C5667 /* Choose.m in Sources */,
 				2DEEFA141E7700D10089CE1F /* MJRefreshBackGifFooter.m in Sources */,
 				2DEEEA0E1E74442F0089CE1F /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1573,10 +1540,10 @@
 				2DEEFA1C1E7700D10089CE1F /* UIScrollView+MJExtension.m in Sources */,
 				2D1BCC631C89A325004637C6 /* CollectionViewController.m in Sources */,
 				2DEEFA071E7700D10089CE1F /* NSArray+PrintChinese.m in Sources */,
-				157B11C81E7802DF00A36084 /* HomeViewController.m in Sources */,
 				2DEEEA3E1E763A080089CE1F /* UIViewController+RESideMenu.m in Sources */,
 				2DEEFA191E7700D10089CE1F /* MJRefreshStateHeader.m in Sources */,
 				2D1065431C853DFC005C5667 /* WebViewTableViewCell.m in Sources */,
+				157B11EE1E78094900A36084 /* RightViewController.m in Sources */,
 				2D1BCC411C888307004637C6 /* RegViewController.m in Sources */,
 				157B11CD1E7804F400A36084 /* NewListViewController.m in Sources */,
 				2DEEEA091E74442F0089CE1F /* SDWebImageManager.m in Sources */,
@@ -1595,16 +1562,13 @@
 				2D07FFF71C84909200D4826E /* TitleTableViewCell.m in Sources */,
 				2DEEFA181E7700D10089CE1F /* MJRefreshNormalHeader.m in Sources */,
 				2DEEEA3D1E763A080089CE1F /* RESideMenu.m in Sources */,
-				157B11D51E78052B00A36084 /* LeftViewController.m in Sources */,
 				2DEEFA151E7700D10089CE1F /* MJRefreshBackNormalFooter.m in Sources */,
 				2DEEF9CC1E76FF900089CE1F /* AppDelegate.m in Sources */,
 				2D2C16F61C8D8DB30084BEF4 /* ThreeImageTableViewCell.m in Sources */,
-				2D1BCC261C8850DC004637C6 /* RightViewController.m in Sources */,
 				2DEEEA021E74442F0089CE1F /* README.md in Sources */,
 				2DEEFA131E7700D10089CE1F /* MJRefreshAutoStateFooter.m in Sources */,
 				2DB2ECBE1C60A6D70080E41E /* FirstViewController.m in Sources */,
 				2DB2ECBB1C60A6CA0080E41E /* FirstTableViewCell.m in Sources */,
-				2D07FFEC1C847CE400D4826E /* LeftViewController.m in Sources */,
 				2DEEFA161E7700D10089CE1F /* MJRefreshBackStateFooter.m in Sources */,
 				2DEEEA051E74442F0089CE1F /* SDWebImageCompat.m in Sources */,
 				2DB2ECC11C60A6E70080E41E /* FirstDetailViewController.m in Sources */,

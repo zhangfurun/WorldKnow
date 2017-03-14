@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CityModel.h"
 @interface LeftViewController : UIViewController
-
+@property (nonatomic,strong)NSMutableArray * arrData;
+@property (nonatomic,strong)CityModel * model;
 @end

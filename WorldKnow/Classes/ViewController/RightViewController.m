@@ -2,8 +2,8 @@
 //  RightViewController.m
 //  WorldKnow
 //
-//  Created by 张福润 on 16/3/3.
-//  Copyright © 2016年 张福润. All rights reserved.
+//  Created by 张福润 on 2017/3/14.
+//  Copyright © 2017年 张福润. All rights reserved.
 //
 
 #import "RightViewController.h"
@@ -23,16 +23,16 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     NSUserDefaults *user=[[NSUserDefaults alloc]init];
-
-
+    
+    
     if([user boolForKey:@"login"]){
         [self.buttonLoginOrCanel setImage:[UIImage imageNamed:@"注销"] forState:(UIControlStateNormal)];
-
+        
         if([user objectForKey:@"userNameLable"]){
             self.labelUserName.text=[user objectForKey:@"userNameLable"];
         }
         else{
-        self.labelUserName.text=[user objectForKey:@"userName"];
+            self.labelUserName.text=[user objectForKey:@"userName"];
         }
     }
     else{
@@ -43,14 +43,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor cyanColor];
-
+    
     self.ImageViewUserHeader.layer.cornerRadius=150/2;
     self.ImageViewUserHeader.layer.masksToBounds=YES;
-//    self.ImageViewUserHeader.backgroundColor=[UIColor whiteColor];
+    //    self.ImageViewUserHeader.backgroundColor=[UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
 - (IBAction)loginAction:(id)sender {
-
+    
     NSUserDefaults *user=[NSUserDefaults standardUserDefaults];
     if([user boolForKey:@"login"]){
         
@@ -68,8 +68,8 @@
         
     }
     else{
-
-
+        
+        
         [self performSegueWithIdentifier:@"segue_loginOeCancel" sender:self];
     }
     
@@ -99,13 +99,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+

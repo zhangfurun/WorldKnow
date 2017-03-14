@@ -9,5 +9,28 @@
 #import <UIKit/UIKit.h>
 
 @interface NewListViewController : UIViewController
+{
+    int pageNumber;
+}
+@property (nonatomic,strong)NSMutableArray * arrayAllData;
+@property (nonatomic,strong)NSIndexPath * index;
+@property (nonatomic,strong)NSString * titlea;
+@property (nonatomic,strong)NSString * number;
 
+
+
+@property (nonatomic,strong)UIScrollView * scrollView;
+@property (nonatomic,strong)UIPageControl * page;
+@property (nonatomic,strong)UIImageView * imageView;
+@property (nonatomic,strong)UILabel * labelHeaderTitle;
+
+///图片的数组
+@property (nonatomic,strong)NSMutableArray * imageArray;
+
+///头条的数组
+@property (nonatomic,strong)NSMutableArray * arrToutiao;
+@property (nonatomic,strong)NSMutableArray * docid;
+
+
+@property (nonatomic,strong)NSTimer * timer;
 @end

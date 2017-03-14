@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController restorationIdentifier="firstViewController" storyboardIdentifier="firstViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="firstViewController" storyboardIdentifier="firstViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vCp-Gq-5mR">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_id_first" rowHeight="98" id="M11-uq-xnM" customClass="FirstTableViewCell">
@@ -236,16 +236,12 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="7Hk-qM-QTr"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OuU-cB-VRd"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vCp-Gq-5mR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0NW-wC-fHB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vCp-Gq-5mR" secondAttribute="bottom" id="E90-CV-ICW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vCp-Gq-5mR" secondAttribute="bottom" id="7XH-da-JLQ"/>
+                            <constraint firstItem="vCp-Gq-5mR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="i7C-3P-NO1"/>
                             <constraint firstItem="vCp-Gq-5mR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lZ8-zb-U1o"/>
                             <constraint firstAttribute="trailing" secondItem="vCp-Gq-5mR" secondAttribute="trailing" id="pKK-wY-RMw"/>
                         </constraints>
@@ -253,21 +249,11 @@
                     <navigationItem key="navigationItem" id="ehb-8L-m8W">
                         <barButtonItem key="leftBarButtonItem" image="列表.png" width="50" id="aTD-oh-CS7">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="presentLeftMenuViewController:" destination="BYZ-38-t0r" id="roH-LV-WNE"/>
-                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="用户.png" id="nGm-is-n0d">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="presentRightMenuViewController:" destination="BYZ-38-t0r" id="3jT-g3-k1Z"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="tableView" destination="vCp-Gq-5mR" id="ENj-bl-I5f"/>
-                        <segue destination="ADs-Uk-fUf" kind="show" identifier="segue_header" id="7f2-JG-3La"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,10 +404,10 @@
             </objects>
             <point key="canvasLocation" x="3640.5" y="1237.5"/>
         </scene>
-        <!--Right View Controller-->
+        <!--View Controller-->
         <scene sceneID="Rg1-qt-ewJ">
             <objects>
-                <viewController restorationIdentifier="rightViewController" storyboardIdentifier="rightViewController" id="RBE-Nf-9Ty" customClass="RightViewController" sceneMemberID="viewController">
+                <viewController id="RBE-Nf-9Ty" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z5l-fD-MQT"/>
                         <viewControllerLayoutGuide type="bottom" id="mo8-f8-O5v"/>
@@ -478,9 +464,6 @@
                                         <include reference="jJh-1s-8dR"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <action selector="loginAction:" destination="RBE-Nf-9Ty" eventType="touchUpInside" id="aff-bm-OSr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1B-GI-o7g">
                                 <rect key="frame" x="160" y="400" width="140" height="80"/>
@@ -498,9 +481,6 @@
                                         <exclude reference="Hqk-Kd-jsl"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <action selector="collectionAction:" destination="RBE-Nf-9Ty" eventType="touchUpInside" id="QZc-xh-A0l"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEH-E8-lld">
                                 <rect key="frame" x="225" y="235" width="0.0" height="0.0"/>
@@ -579,30 +559,10 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="ImageViewUserHeader" destination="sLy-xK-q6s" id="5KF-wL-uHw"/>
-                        <outlet property="buttonCollection" destination="y1B-GI-o7g" id="bJy-Q4-LrD"/>
-                        <outlet property="buttonLoginOrCanel" destination="U7Z-4z-3g6" id="Lrh-ir-i03"/>
-                        <outlet property="labelUserName" destination="HEH-E8-lld" id="Ad8-og-wAW"/>
-                        <outlet property="searchDisplayController" destination="bho-yd-2SQ" id="hU9-kl-dCh"/>
-                        <segue destination="5kJ-mk-JWL" kind="show" identifier="segue_loginOeCancel" id="g9w-wr-sdM"/>
-                        <segue destination="0Gt-c2-w5g" kind="show" identifier="segue_id_collectionWithLogin" id="Zky-0X-eTv"/>
-                    </connections>
                 </viewController>
-                <searchDisplayController id="bho-yd-2SQ">
-                    <connections>
-                        <outlet property="delegate" destination="RBE-Nf-9Ty" id="yMM-dc-2q5"/>
-                        <outlet property="searchContentsController" destination="RBE-Nf-9Ty" id="GRT-9J-BqT"/>
-                        <outlet property="searchResultsDataSource" destination="RBE-Nf-9Ty" id="bvI-B2-GEQ"/>
-                        <outlet property="searchResultsDelegate" destination="RBE-Nf-9Ty" id="oiI-tS-xhF"/>
-                    </connections>
-                </searchDisplayController>
+                <searchDisplayController id="bho-yd-2SQ"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6HN-gZ-ohF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Ll3-Cu-392">
-                    <connections>
-                        <action selector="tapAction:" destination="RBE-Nf-9Ty" id="n3e-E1-KHB"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ll3-Cu-392"/>
             </objects>
             <point key="canvasLocation" x="3664.5" y="321"/>
         </scene>
@@ -1780,10 +1740,10 @@
             </objects>
             <point key="canvasLocation" x="433.5" y="300.75"/>
         </scene>
-        <!--Left View Controller-->
+        <!--View Controller-->
         <scene sceneID="cSx-yE-BpO">
             <objects>
-                <viewController restorationIdentifier="leftViewController" storyboardIdentifier="leftViewController" id="2d2-GZ-JEP" customClass="LeftViewController" sceneMemberID="viewController">
+                <viewController id="2d2-GZ-JEP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nab-Uf-VMO"/>
                         <viewControllerLayoutGuide type="bottom" id="Qrb-Y9-GSG"/>
@@ -1798,10 +1758,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vnc-KR-zh7">
                                 <rect key="frame" x="70" y="155" width="305" height="512"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="2d2-GZ-JEP" id="eK1-mv-3jv"/>
-                                    <outlet property="delegate" destination="2d2-GZ-JEP" id="fxw-Bc-1PX"/>
-                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oe-zu-Hdn">
                                 <rect key="frame" x="20" y="155" width="30" height="30"/>
@@ -1964,7 +1920,6 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="changeLocationAction:" destination="2d2-GZ-JEP" eventType="touchUpInside" id="QjH-iH-yQr"/>
                                             <segue destination="oQI-br-nt8" kind="presentation" identifier="segue_place" id="Mfv-Ie-CmF"/>
                                         </connections>
                                     </button>
@@ -2156,17 +2111,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="buttonAdd" destination="4Oe-zu-Hdn" id="0p3-dP-Cem"/>
-                        <outlet property="buttonLocation" destination="Tvl-6m-bu6" id="wrW-7h-6fN"/>
-                        <outlet property="labelCurrentTemp" destination="ZYw-Xp-YVy" id="Gak-cF-D4e"/>
-                        <outlet property="labelRefreshTime" destination="hD8-le-i77" id="hR6-zg-ydB"/>
-                        <outlet property="labelTemp" destination="rg3-fk-3oy" id="9ym-dw-WAh"/>
-                        <outlet property="labelWeather" destination="61b-dh-xoG" id="2Ja-gG-LoT"/>
-                        <outlet property="labelWind" destination="a0i-c4-PLT" id="8L2-2c-ujD"/>
-                        <outlet property="labelWindLevel" destination="r5h-7Z-gI7" id="TEg-qY-bxG"/>
-                        <outlet property="tableView" destination="Vnc-KR-zh7" id="D32-bf-2ov"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTC-TP-Wbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2308,10 +2252,10 @@
             </objects>
             <point key="canvasLocation" x="1179" y="1203.75"/>
         </scene>
-        <!--Root View Controller-->
+        <!--View Controller-->
         <scene sceneID="Ued-mS-7gz">
             <objects>
-                <viewController id="jwc-w6-FG6" customClass="RootViewController" sceneMemberID="viewController">
+                <viewController id="jwc-w6-FG6" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vx2-DB-Eph"/>
                         <viewControllerLayoutGuide type="bottom" id="h8F-wP-pnF"/>
@@ -2337,9 +2281,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sUn-Rr-2j2"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Psd-eD-MNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2372,7 +2313,6 @@
         <image name="邮箱.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VYw-q9-bKa"/>
-        <segue reference="VCn-57-21h"/>
+        <segue reference="jUJ-dq-Rp2"/>
     </inferredMetricsTieBreakers>
 </document>
