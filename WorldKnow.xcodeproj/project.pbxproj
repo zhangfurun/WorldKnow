@@ -481,13 +481,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		157B11BF1E7801FF00A36084 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
 		157B11C01E78021900A36084 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -734,6 +727,13 @@
 			name = UserCenter;
 			sourceTree = "<group>";
 		};
+		157B12E31E7A39B400A36084 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		2DB2EC771C60863B0080E41E = {
 			isa = PBXGroup;
 			children = (
@@ -804,7 +804,7 @@
 				157B11C31E78024F00A36084 /* Model */,
 				157B12AB1E7A321200A36084 /* View */,
 				157B11C11E78023900A36084 /* ViewController */,
-				157B11BF1E7801FF00A36084 /* Request */,
+				157B12E31E7A39B400A36084 /* Request */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
