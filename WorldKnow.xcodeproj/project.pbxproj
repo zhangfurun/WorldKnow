@@ -799,12 +799,12 @@
 		2DEEE9321E7402A30089CE1F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				157B11BF1E7801FF00A36084 /* Request */,
 				2DEEE9331E7402A30089CE1F /* Common */,
 				2DEEE9391E7402A30089CE1F /* Other */,
 				157B11C31E78024F00A36084 /* Model */,
 				157B12AB1E7A321200A36084 /* View */,
 				157B11C11E78023900A36084 /* ViewController */,
+				157B11BF1E7801FF00A36084 /* Request */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
