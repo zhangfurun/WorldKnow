@@ -76,6 +76,7 @@
 		157B12DB1E7A323D00A36084 /* PickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12CE1E7A323D00A36084 /* PickViewController.m */; };
 		157B12DC1E7A323D00A36084 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12D01E7A323D00A36084 /* RegViewController.m */; };
 		157B12E21E7A33CC00A36084 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157B12E11E7A33CC00A36084 /* AVOSCloud.framework */; };
+		157B12E61E7A39FC00A36084 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12E51E7A39FC00A36084 /* BaseRequest.m */; };
 		2D2C16F81C8DC91F0084BEF4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16F71C8DC91F0084BEF4 /* Security.framework */; };
 		2D2C16FA1C8DC9290084BEF4 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16F91C8DC9290084BEF4 /* libiconv.2.4.0.tbd */; };
 		2D2C16FC1C8DC9320084BEF4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16FB1C8DC9320084BEF4 /* SystemConfiguration.framework */; };
@@ -273,6 +274,8 @@
 		157B12CF1E7A323D00A36084 /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegViewController.h; sourceTree = "<group>"; };
 		157B12D01E7A323D00A36084 /* RegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
 		157B12E11E7A33CC00A36084 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = Frameworks/AVOSCloud.framework; sourceTree = "<group>"; };
+		157B12E41E7A39FC00A36084 /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		157B12E51E7A39FC00A36084 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
 		2D2C16F71C8DC91F0084BEF4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2D2C16F91C8DC9290084BEF4 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		2D2C16FB1C8DC9320084BEF4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -730,6 +733,8 @@
 		157B12E31E7A39B400A36084 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				157B12E41E7A39FC00A36084 /* BaseRequest.h */,
+				157B12E51E7A39FC00A36084 /* BaseRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1364,6 +1369,7 @@
 				157B12D61E7A323D00A36084 /* FirstDetailViewController.m in Sources */,
 				157B11CD1E7804F400A36084 /* NewListViewController.m in Sources */,
 				2DEEEA091E74442F0089CE1F /* SDWebImageManager.m in Sources */,
+				157B12E61E7A39FC00A36084 /* BaseRequest.m in Sources */,
 				2DEEFA1D1E7700D10089CE1F /* UIScrollView+MJRefresh.m in Sources */,
 				157B12C01E7A321200A36084 /* TitleTableViewCell.m in Sources */,
 				2DEEEA0F1E74442F0089CE1F /* UIImageView+WebCache.m in Sources */,
