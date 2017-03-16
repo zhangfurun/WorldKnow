@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AllListName : NSObject
-+(instancetype)shareAllList;
++ (instancetype)shareAllList;
 
--(NSDictionary *)getAllList;
+- (NSDictionary *)getAllList;
 @end

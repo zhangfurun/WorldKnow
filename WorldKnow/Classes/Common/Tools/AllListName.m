@@ -7,21 +7,21 @@
 //
 
 #import "AllListName.h"
+
 static AllListName *all=nil;
+
 @implementation AllListName
-+(instancetype)shareAllList{
++ (instancetype)shareAllList{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        all=[[AllListName alloc]init];
-        
+        all = [[AllListName alloc]init];
     });
     return all;
 }
 
--(NSDictionary *)getAllList{
+- (NSDictionary *)getAllList{
     NSString *path=[[NSBundle mainBundle]pathForResource:@"NewsList" ofType:@"plist"];
     NSDictionary *dic=[NSDictionary dictionaryWithContentsOfFile:path];
     return dic;
-
 }
 @end

@@ -502,8 +502,8 @@
 		157B11C11E78023900A36084 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				157B12981E7A30AD00A36084 /* UserCenterViewController */,
 				157B12971E7A307000A36084 /* RESideMenuViewController */,
+				157B12981E7A30AD00A36084 /* UserCenterViewController */,
 				157B11CF1E7804FD00A36084 /* NewsViewController */,
 			);
 			path = ViewController;
@@ -817,8 +817,8 @@
 		2DEEE9331E7402A30089CE1F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				157B11F01E780AE800A36084 /* Tools */,
 				2DEEE9351E7402A30089CE1F /* Libs */,
+				157B11F01E780AE800A36084 /* Tools */,
 			);
 			path = Common;
 			sourceTree = "<group>";
