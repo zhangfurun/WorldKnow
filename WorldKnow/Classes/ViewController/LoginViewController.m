@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "AVOSCloud.framework/Headers/AVUser.h"
+#import <AVOSCloud/AVUser.h>
 #import <UMSocialCore/UMSocialCore.h>
 
 @interface LoginViewController ()

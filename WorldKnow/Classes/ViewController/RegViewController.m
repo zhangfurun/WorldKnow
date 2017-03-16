@@ -7,7 +7,9 @@
 //
 
 #import "RegViewController.h"
-#import "AVOSCloud.framework/Headers/AVUser.h"
+
+#import <AVOSCloud/AVUser.h>
+
 @interface RegViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textFieldUserName;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;

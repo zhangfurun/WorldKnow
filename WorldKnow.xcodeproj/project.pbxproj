@@ -75,6 +75,7 @@
 		157B12DA1E7A323D00A36084 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12CC1E7A323D00A36084 /* LoginViewController.m */; };
 		157B12DB1E7A323D00A36084 /* PickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12CE1E7A323D00A36084 /* PickViewController.m */; };
 		157B12DC1E7A323D00A36084 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12D01E7A323D00A36084 /* RegViewController.m */; };
+		157B12E21E7A33CC00A36084 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157B12E11E7A33CC00A36084 /* AVOSCloud.framework */; };
 		2D2C16F81C8DC91F0084BEF4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16F71C8DC91F0084BEF4 /* Security.framework */; };
 		2D2C16FA1C8DC9290084BEF4 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16F91C8DC9290084BEF4 /* libiconv.2.4.0.tbd */; };
 		2D2C16FC1C8DC9320084BEF4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16FB1C8DC9320084BEF4 /* SystemConfiguration.framework */; };
@@ -117,7 +118,6 @@
 		2DEEEA4A1E76464A0089CE1F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA491E76464A0089CE1F /* libicucore.tbd */; };
 		2DEEEA4C1E7646630089CE1F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA4B1E7646630089CE1F /* MobileCoreServices.framework */; };
 		2DEEEA4E1E7646700089CE1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA4D1E7646700089CE1F /* CoreLocation.framework */; };
-		2DEEEA521E76471E0089CE1F /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEA511E76471E0089CE1F /* AVOSCloud.framework */; };
 		2DEEEACE1E766AD70089CE1F /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAA91E766AD70089CE1F /* libSocialQQ.a */; };
 		2DEEEACF1E766AD70089CE1F /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAAA1E766AD70089CE1F /* TencentOpenAPI.framework */; };
 		2DEEEAD01E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DEEEAAB1E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle */; };
@@ -272,6 +272,7 @@
 		157B12CE1E7A323D00A36084 /* PickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewController.m; sourceTree = "<group>"; };
 		157B12CF1E7A323D00A36084 /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegViewController.h; sourceTree = "<group>"; };
 		157B12D01E7A323D00A36084 /* RegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
+		157B12E11E7A33CC00A36084 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = Frameworks/AVOSCloud.framework; sourceTree = "<group>"; };
 		2D2C16F71C8DC91F0084BEF4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2D2C16F91C8DC9290084BEF4 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		2D2C16FB1C8DC9320084BEF4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -339,7 +340,6 @@
 		2DEEEA491E76464A0089CE1F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		2DEEEA4B1E7646630089CE1F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		2DEEEA4D1E7646700089CE1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		2DEEEA511E76471E0089CE1F /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
 		2DEEEAA91E766AD70089CE1F /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
 		2DEEEAAA1E766AD70089CE1F /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		2DEEEAAB1E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
@@ -433,6 +433,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157B12E21E7A33CC00A36084 /* AVOSCloud.framework in Frameworks */,
 				2DB2ED0A1C60F6B90080E41E /* libxml2.2.tbd in Frameworks */,
 				2DEEEAE31E766B720089CE1F /* ImageIO.framework in Frameworks */,
 				2DEEEAE11E766B670089CE1F /* libc++.tbd in Frameworks */,
@@ -445,7 +446,6 @@
 				2DEEEA4C1E7646630089CE1F /* MobileCoreServices.framework in Frameworks */,
 				2D2C17001C8DC9480084BEF4 /* libsqlite3.0.tbd in Frameworks */,
 				2DEEEAD41E766AD70089CE1F /* libSocialWeChat.a in Frameworks */,
-				2DEEEA521E76471E0089CE1F /* AVOSCloud.framework in Frameworks */,
 				2DEEEACF1E766AD70089CE1F /* TencentOpenAPI.framework in Frameworks */,
 				2DEEEAD91E766AD70089CE1F /* UMSocialCore.framework in Frameworks */,
 				2DEEEA4A1E76464A0089CE1F /* libicucore.tbd in Frameworks */,
@@ -1119,10 +1119,10 @@
 		7EEC62AD19156A9B6CB1B32F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				157B12E11E7A33CC00A36084 /* AVOSCloud.framework */,
 				2DEEEAE21E766B720089CE1F /* ImageIO.framework */,
 				2DEEEAE01E766B670089CE1F /* libc++.tbd */,
 				2DEEEADE1E766B2F0089CE1F /* libsqlite3.tbd */,
-				2DEEEA511E76471E0089CE1F /* AVOSCloud.framework */,
 				2DEEEA4D1E7646700089CE1F /* CoreLocation.framework */,
 				2DEEEA4B1E7646630089CE1F /* MobileCoreServices.framework */,
 				2DEEEA491E76464A0089CE1F /* libicucore.tbd */,
@@ -1547,6 +1547,7 @@
 					"$(PROJECT_DIR)/WorldKnow/Classes/Common/Libs/UMSocial/SocialLibraries/QQ",
 					"$(PROJECT_DIR)/WorldKnow/Classes/Common/Libs/UMSocial/UMSocialSDK",
 					"$(PROJECT_DIR)/WorldKnow/Classes/Common/Libs/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WorldKnow/Classes/Common/Tools/Header.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1609,6 +1610,7 @@
 					"$(PROJECT_DIR)/WorldKnow/Classes/Common/Libs/UMSocial/SocialLibraries/QQ",
 					"$(PROJECT_DIR)/WorldKnow/Classes/Common/Libs/UMSocial/UMSocialSDK",
 					"$(PROJECT_DIR)/WorldKnow/Classes/Common/Libs/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WorldKnow/Classes/Common/Tools/Header.pch";
 				HEADER_SEARCH_PATHS = (

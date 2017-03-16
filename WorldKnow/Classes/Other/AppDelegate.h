@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AVOSCloud.framework/Headers/AVOSCloud.h"
+#import <AVOSCloud/AVOSCloud.h>
 
 #import "RESideMenu.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate, RESideMenuDelegate>
