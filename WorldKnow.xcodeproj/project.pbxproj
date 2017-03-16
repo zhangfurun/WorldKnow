@@ -77,6 +77,8 @@
 		157B12DC1E7A323D00A36084 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12D01E7A323D00A36084 /* RegViewController.m */; };
 		157B12E21E7A33CC00A36084 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157B12E11E7A33CC00A36084 /* AVOSCloud.framework */; };
 		157B12E61E7A39FC00A36084 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12E51E7A39FC00A36084 /* BaseRequest.m */; };
+		157B12F51E7A463500A36084 /* NSArray+PrintChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12F21E7A463500A36084 /* NSArray+PrintChinese.m */; };
+		157B12F61E7A463500A36084 /* NSDictionary+PrintChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12F41E7A463500A36084 /* NSDictionary+PrintChinese.m */; };
 		2D2C16F81C8DC91F0084BEF4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16F71C8DC91F0084BEF4 /* Security.framework */; };
 		2D2C16FA1C8DC9290084BEF4 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16F91C8DC9290084BEF4 /* libiconv.2.4.0.tbd */; };
 		2D2C16FC1C8DC9320084BEF4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16FB1C8DC9320084BEF4 /* SystemConfiguration.framework */; };
@@ -139,8 +141,6 @@
 		2DEEEAE11E766B670089CE1F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAE01E766B670089CE1F /* libc++.tbd */; };
 		2DEEEAE31E766B720089CE1F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEEEAE21E766B720089CE1F /* ImageIO.framework */; };
 		2DEEF9CC1E76FF900089CE1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEF9CB1E76FF900089CE1F /* AppDelegate.m */; };
-		2DEEFA071E7700D10089CE1F /* NSArray+PrintChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEF9D01E7700D10089CE1F /* NSArray+PrintChinese.m */; };
-		2DEEFA081E7700D10089CE1F /* NSDictionary+PrintChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEF9D21E7700D10089CE1F /* NSDictionary+PrintChinese.m */; };
 		2DEEFA0A1E7700D10089CE1F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEF9D71E7700D10089CE1F /* Reachability.m */; };
 		2DEEFA0B1E7700D10089CE1F /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEF9DB1E7700D10089CE1F /* MJRefreshAutoFooter.m */; };
 		2DEEFA0C1E7700D10089CE1F /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEEF9DD1E7700D10089CE1F /* MJRefreshBackFooter.m */; };
@@ -276,6 +276,10 @@
 		157B12E11E7A33CC00A36084 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = Frameworks/AVOSCloud.framework; sourceTree = "<group>"; };
 		157B12E41E7A39FC00A36084 /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
 		157B12E51E7A39FC00A36084 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
+		157B12F11E7A463500A36084 /* NSArray+PrintChinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PrintChinese.h"; sourceTree = "<group>"; };
+		157B12F21E7A463500A36084 /* NSArray+PrintChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PrintChinese.m"; sourceTree = "<group>"; };
+		157B12F31E7A463500A36084 /* NSDictionary+PrintChinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PrintChinese.h"; sourceTree = "<group>"; };
+		157B12F41E7A463500A36084 /* NSDictionary+PrintChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PrintChinese.m"; sourceTree = "<group>"; };
 		2D2C16F71C8DC91F0084BEF4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2D2C16F91C8DC9290084BEF4 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		2D2C16FB1C8DC9320084BEF4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -381,10 +385,6 @@
 		2DEEEAE21E766B720089CE1F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2DEEF9CA1E76FF900089CE1F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DEEF9CB1E76FF900089CE1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DEEF9CF1E7700D10089CE1F /* NSArray+PrintChinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PrintChinese.h"; sourceTree = "<group>"; };
-		2DEEF9D01E7700D10089CE1F /* NSArray+PrintChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PrintChinese.m"; sourceTree = "<group>"; };
-		2DEEF9D11E7700D10089CE1F /* NSDictionary+PrintChinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PrintChinese.h"; sourceTree = "<group>"; };
-		2DEEF9D21E7700D10089CE1F /* NSDictionary+PrintChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PrintChinese.m"; sourceTree = "<group>"; };
 		2DEEF9D61E7700D10089CE1F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		2DEEF9D71E7700D10089CE1F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		2DEEF9DA1E7700D10089CE1F /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
@@ -739,6 +739,17 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		157B12F01E7A463500A36084 /* PrintToolsChinese */ = {
+			isa = PBXGroup;
+			children = (
+				157B12F11E7A463500A36084 /* NSArray+PrintChinese.h */,
+				157B12F21E7A463500A36084 /* NSArray+PrintChinese.m */,
+				157B12F31E7A463500A36084 /* NSDictionary+PrintChinese.h */,
+				157B12F41E7A463500A36084 /* NSDictionary+PrintChinese.m */,
+			);
+			path = PrintToolsChinese;
+			sourceTree = "<group>";
+		};
 		2DB2EC771C60863B0080E41E = {
 			isa = PBXGroup;
 			children = (
@@ -826,7 +837,7 @@
 		2DEEE9351E7402A30089CE1F /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				2DEEF9CE1E7700D10089CE1F /* 数组字典打印中文 */,
+				157B12F01E7A463500A36084 /* PrintToolsChinese */,
 				2DEEF9D31E7700D10089CE1F /* GData */,
 				2DEEF9D81E7700D10089CE1F /* MJRefresh */,
 				2DEEEA351E763A080089CE1F /* RESideMenu */,
@@ -1002,17 +1013,6 @@
 				2DEEEACD1E766AD70089CE1F /* UShareUI.framework */,
 			);
 			path = UMSocialUI;
-			sourceTree = "<group>";
-		};
-		2DEEF9CE1E7700D10089CE1F /* 数组字典打印中文 */ = {
-			isa = PBXGroup;
-			children = (
-				2DEEF9CF1E7700D10089CE1F /* NSArray+PrintChinese.h */,
-				2DEEF9D01E7700D10089CE1F /* NSArray+PrintChinese.m */,
-				2DEEF9D11E7700D10089CE1F /* NSDictionary+PrintChinese.h */,
-				2DEEF9D21E7700D10089CE1F /* NSDictionary+PrintChinese.m */,
-			);
-			path = "数组字典打印中文";
 			sourceTree = "<group>";
 		};
 		2DEEF9D31E7700D10089CE1F /* GData */ = {
@@ -1335,7 +1335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				157B12DC1E7A323D00A36084 /* RegViewController.m in Sources */,
-				2DEEFA081E7700D10089CE1F /* NSDictionary+PrintChinese.m in Sources */,
 				2DEEEA071E74442F0089CE1F /* SDWebImageDownloader.m in Sources */,
 				2DEEFA171E7700D10089CE1F /* MJRefreshGifHeader.m in Sources */,
 				2DEEEA101E74442F0089CE1F /* UIView+WebCacheOperation.m in Sources */,
@@ -1353,6 +1352,7 @@
 				157B11F71E780E2F00A36084 /* NewsListItem.m in Sources */,
 				2DEEEA0C1E74442F0089CE1F /* UIImage+GIF.m in Sources */,
 				2DEEFA141E7700D10089CE1F /* MJRefreshBackGifFooter.m in Sources */,
+				157B12F61E7A463500A36084 /* NSDictionary+PrintChinese.m in Sources */,
 				2DEEEA0E1E74442F0089CE1F /* UIImageView+HighlightedWebCache.m in Sources */,
 				2DEEEA061E74442F0089CE1F /* SDWebImageDecoder.m in Sources */,
 				2DEEEA031E74442F0089CE1F /* NSData+ImageContentType.m in Sources */,
@@ -1361,7 +1361,6 @@
 				2DEEEA3C1E763A080089CE1F /* RECommonFunctions.m in Sources */,
 				157B12BE1E7A321200A36084 /* NewsImagesCell.m in Sources */,
 				2DEEFA1C1E7700D10089CE1F /* UIScrollView+MJExtension.m in Sources */,
-				2DEEFA071E7700D10089CE1F /* NSArray+PrintChinese.m in Sources */,
 				2DEEEA3E1E763A080089CE1F /* UIViewController+RESideMenu.m in Sources */,
 				157B12C11E7A321200A36084 /* WebViewTableViewCell.m in Sources */,
 				2DEEFA191E7700D10089CE1F /* MJRefreshStateHeader.m in Sources */,
@@ -1374,6 +1373,7 @@
 				157B12C01E7A321200A36084 /* TitleTableViewCell.m in Sources */,
 				2DEEEA0F1E74442F0089CE1F /* UIImageView+WebCache.m in Sources */,
 				2DEEFA0B1E7700D10089CE1F /* MJRefreshAutoFooter.m in Sources */,
+				157B12F51E7A463500A36084 /* NSArray+PrintChinese.m in Sources */,
 				2DEEFA1B1E7700D10089CE1F /* MJRefreshConst.m in Sources */,
 				2DEEEA0A1E74442F0089CE1F /* SDWebImagePrefetcher.m in Sources */,
 				2DEEFA121E7700D10089CE1F /* MJRefreshAutoNormalFooter.m in Sources */,
