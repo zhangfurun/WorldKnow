@@ -1,5 +1,5 @@
 //
-//  NewsListItem.h
+//  NewsItem.h
 //  WorldKnow
 //
 //  Created by 张福润 on 2017/3/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NewsListItem : NSObject
+@interface NewsItem : NSObject
 ///唯一标示id
 @property (nonatomic,strong)NSString * postid;
 ///图片地址

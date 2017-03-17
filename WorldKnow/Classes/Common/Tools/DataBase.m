@@ -47,7 +47,7 @@ static sqlite3 *db=nil;
 
 }
 
--(BOOL)addWithNews:(NewsListItem *)model
+-(BOOL)addWithNews:(NewsItem *)model
          tableName:(NSString *)userName{
     NSString *sql=[NSString stringWithFormat:@"INSERT INTO MY_NEWS_%@ (postid , ltitle ,digest ) VALUES ('%@','%@','%@')",userName,model.postid,model.ltitle,model.digest];
     
@@ -75,7 +75,7 @@ static sqlite3 *db=nil;
     int result=sqlite3_prepare(db, sql.UTF8String, -1, &stmt, NULL);
     if(result==SQLITE_OK){
         while (sqlite3_step(stmt)==SQLITE_ROW) {
-            NewsListItem *model=[[NewsListItem alloc]init];
+            NewsItem *model=[[NewsItem alloc]init];
             char *selectPostid=(char *)sqlite3_column_text(stmt, 0);
             NSString *pocid=[NSString stringWithCString:selectPostid encoding:NSUTF8StringEncoding];
             

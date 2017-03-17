@@ -6,14 +6,20 @@
 //  Copyright © 2017年 张福润. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WKBaseTableViewCell.h"
 
-@interface NewsImagesCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *imageViewFirst;
-@property (weak, nonatomic) IBOutlet UIImageView *imageViewSecond;
-@property (weak, nonatomic) IBOutlet UIImageView *imageViewThree;
-@property (weak, nonatomic) IBOutlet UILabel *labelTitle;
-@property (weak, nonatomic) IBOutlet UILabel *labelTie;
+@class NewsItem;
+@class NewsImagesCell;
 
+@protocol NewsImagesCellDelegate <NSObject>
+
+@optional
+- (void)newsImagesCell:(NewsImagesCell *)cell didSelectedWithItem:(NewsItem *)item;
+
+@end
+
+@interface NewsImagesCell : WKBaseTableViewCell
+@property (strong, nonatomic) NewsItem *item;
+@property (weak, nonatomic) id<NewsImagesCellDelegate> delegate;
 
 @end

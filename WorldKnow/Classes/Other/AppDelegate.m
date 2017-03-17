@@ -11,7 +11,7 @@
 
 #import "LeftViewController.h"
 #import "RightViewController.h"
-#import "NewListViewController.h"
+#import "NewsListViewController.h"
 
 @interface AppDelegate ()
 
@@ -115,7 +115,7 @@
 - (void)setBaseViewController {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[NewListViewController alloc] init]];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[NewsListViewController alloc] init]];
     LeftViewController *leftMenuViewController = [[LeftViewController alloc] init];
     RightViewController *rightMenuViewController = [[RightViewController alloc] init];
     

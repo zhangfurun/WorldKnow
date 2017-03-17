@@ -1,17 +1,17 @@
 //
-//  NewListViewController.m
+//  NewsListViewController.m
 //  WorldKnow
 //
 //  Created by 张福润 on 2017/3/14.
 //  Copyright © 2017年 张福润. All rights reserved.
 //
 
-#import "NewListViewController.h"
+#import "NewsListViewController.h"
 
 #import "NewsImagesCell.h"
-#import "NewsDetaultCell.h"
+#import "NewsListCell.h"
 
-#import "NewsListItem.h"
+#import "NewsItem.h"
 
 #import "Choose.h"
 #import "MJRefresh.h"
@@ -20,20 +20,23 @@
 
 #define CELLID @"cell_id_first"
 
-@interface NewListViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface NewsListViewController ()<UITableViewDelegate,UITableViewDataSource, NewsListCellDelegate, NewsImagesCellDelegate>
 {
     NSInteger flag;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+///图片的数组
+@property (nonatomic,strong)NSMutableArray * imageArray;
 @end
 
-@implementation NewListViewController
+@implementation NewsListViewController
 
 #pragma mark - Left Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     flag = 0;
-    self.title = [Choose shareWithChoose].title;
+    self.navigationItem.title = [Choose shareWithChoose].title;
     [self getData:[Choose shareWithChoose].userChoose];
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self.timer invalidate];
@@ -80,7 +83,7 @@
         if(data){
             NSDictionary *dicJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
             for(NSDictionary *dealsDic in dicJSON[sender]){
-                NewsListItem *model = [[NewsListItem alloc]init];
+                NewsItem *model = [[NewsItem alloc]init];
                 [model setValuesForKeysWithDictionary:dealsDic];
                 //                if(model.docid.length>0&&model.imgsrc.length>0&&model.digest.length>0&&model.ltitle.length>0){
                 if(([model.replyCount integerValue] > 50) && (self.arrToutiao.count < 6)){
@@ -106,7 +109,7 @@
 }
 
 #pragma mark - Methods
--(NSMutableArray *)arrayAllData{
+- (NSMutableArray *)arrayAllData{
     if(!_arrayAllData){
         _arrayAllData=[NSMutableArray array];
         
@@ -114,19 +117,19 @@
     return _arrayAllData;
 }
 
--(NSMutableArray *)arrToutiao{
+- (NSMutableArray *)arrToutiao{
     if(!_arrToutiao){
         _arrToutiao=[NSMutableArray array];
     }
     return _arrToutiao;
 }
 
--(void)endRefresh{
+- (void)endRefresh{
     [self.tableView.mj_header endRefreshing];
     [self.tableView.mj_footer endRefreshing];
 }
 
--(UIView *)headerCustom{
+- (UIView *)headerCustom{
     if(self.arrToutiao.count>0){
         UIView *viewCustom = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kWith, 200)];
         self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kWith, 200)];
@@ -209,10 +212,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     //点击cell
     if ([segue.identifier isEqualToString:@"segue_news"] || [segue.identifier isEqualToString:@"segue_image"]){
-        NewsDetaultCell *cell = (NewsDetaultCell *)sender;
+        NewsListCell *cell = (NewsListCell *)sender;
         NSIndexPath *index = [self.tableView indexPathForCell:cell];
         id des = segue.destinationViewController;
-        NewsListItem *model = self.arrayAllData[index.row] ;
+        NewsItem *model = self.arrayAllData[index.row] ;
         [des setValue:model.docid forKey:@"postid"];
         [des setValue:model forKey:@"model"];
     }
@@ -220,7 +223,7 @@
     else{
         //点击轮播图
         if([segue.identifier isEqualToString:@"segue_header"]){
-            NewsListItem *model = [[NewsListItem alloc]init];
+            NewsItem *model = [[NewsItem alloc]init];
             int a = ((int)self.scrollView.contentOffset.x) % (self.arrToutiao.count * (int)kWith) / (int)kWith;
             [model setValuesForKeysWithDictionary: self.arrToutiao[a]];
             
@@ -232,39 +235,29 @@
 }
 
 #pragma mark - UITableViewDelegate
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.arrayAllData.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NewsDetaultCell *cell_a = [tableView dequeueReusableCellWithIdentifier:CELLID ];
-    NewsImagesCell *cell_b=[tableView dequeueReusableCellWithIdentifier:@"cell_id_threeImage"  ];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NewsListItem *model =self.arrayAllData[indexPath.row];
-    if(model.imgextra.count>0){
-        cell_b.labelTitle.text=model.title;
-        cell_b.labelTie.text=[NSString stringWithFormat:@"%@回复",model.replyCount];
-        [cell_b.imageViewFirst sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]];
-        [cell_b.imageViewSecond sd_setImageWithURL:[NSURL URLWithString:model.imgextra[0][@"imgsrc"]]];
-        [cell_b.imageViewThree sd_setImageWithURL:[NSURL URLWithString:model.imgextra[1][@"imgsrc"]]];
-        //
-        return cell_b;
-    }
-    else{
-        [cell_a.imV sd_setImageWithURL:[NSURL URLWithString:model.imgsrc]];
-        if(model.ltitle.length == 0){
-            cell_a.labelTitle.text = model.title;
-        }else{
-            cell_a.labelTitle.text = model.ltitle;
-        }
-        cell_a.labelDetail.text = model.digest;
-        cell_a.labelTie.text = [NSString stringWithFormat:@"%@回复",model.replyCount];
-        return cell_a;
+    NewsItem *model =self.arrayAllData[indexPath.row];
+    
+    if(model.imgextra.count > 0) {
+        NewsImagesCell *cell = [NewsImagesCell cellWithTableView:tableView];
+        cell.item = model;
+        cell.delegate = self;
+        return cell;
+    }else{
+        NewsListCell *cell = [NewsListCell cellWithTableView:tableView];
+        cell.item = model;
+        cell.delegate = self;
+        return cell;
     }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NewsListItem *model =self.arrayAllData[indexPath.row];
+    NewsItem *model =self.arrayAllData[indexPath.row];
     if(model.imgextra.count > 0){
         return 126;
     }
@@ -277,4 +270,13 @@
     self.index = indexPath;
 }
 
+#pragma mark - NewsListCellDelegate
+- (void)newsListCell:(NewsListCell *)cell didSelectedWithItem:(NewsItem *)item {
+    
+}
+
+#pragma mark - NewsImagesCellDelegate
+- (void)newsImagesCell:(NewsImagesCell *)cell didSelectedWithItem:(NewsItem *)item {
+    
+}
 @end

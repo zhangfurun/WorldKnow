@@ -1,12 +1,13 @@
 //
-//  FirstDetailViewController.m
+//  NewsDetailViewController.m
 //  WorldKnow
 //
-//  Created by 张福润 on 16/2/2.
-//  Copyright © 2016年 张福润. All rights reserved.
+//  Created by 张福润 on 2017/3/17.
+//  Copyright © 2017年 张福润. All rights reserved.
 //
 
-#import "FirstDetailViewController.h"
+#import "NewsDetailViewController.h"
+
 #define CELLID @"cell_id_firstDetil"
 #import "UIImageView+WebCache.h"
 #import "TitleTableViewCell.h"
@@ -15,9 +16,10 @@
 #import "DataBase.h"
 #import <UMSocialCore/UMSocialCore.h>
 #import <UShareUI/UShareUI.h>
+#import "NewsItem.h"
+#import "FirstDetilModel.h"
 
-
-@interface FirstDetailViewController ()<UIWebViewDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface NewsDetailViewController ()<UIWebViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *itemCollection;
 @property (weak, nonatomic) IBOutlet UIButton *buttonModelBack;
@@ -25,9 +27,9 @@
 
 @end
 
-@implementation FirstDetailViewController
+@implementation NewsDetailViewController
 - (IBAction)backAction:(id)sender {
-     [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 //- (IBAction)shareAction:(id)sender {
 //
@@ -38,9 +40,9 @@
 //                                     shareImage: self.imageShare
 //                                shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToQQ,UMShareToQzone,UMShareToWechatTimeline,UMShareToWechatSession,nil]
 //                                       delegate:self];
-//    
-//    
-//    
+//
+//
+//
 //}
 
 - (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
@@ -89,8 +91,8 @@
     NSString *userName=[user objectForKey:@"userName"];
     if(userName){
         [[DataBase shareDataBase]openDBWithTable:userName];
-      NSArray *arr= [[DataBase shareDataBase]selectWithTableName:userName];
-        for(NewsListItem *model in arr){
+        NSArray *arr= [[DataBase shareDataBase]selectWithTableName:userName];
+        for(NewsItem *model in arr){
             if([model.postid isEqualToString:self.model.postid]){
                 [self.itemCollection setImage:[UIImage imageNamed:@"已收藏"]];
             }
@@ -107,19 +109,19 @@
     if(!userName){
         [self performSegueWithIdentifier:@"segue_noLogin" sender:self];
     }else{
-    
-    if([[DataBase shareDataBase]addWithNews:self.model tableName:userName]){
-        NSLog(@"%ld",[[DataBase shareDataBase] selectWithTableName:userName].count);
-        [self.itemCollection setImage:[UIImage imageNamed:@"已收藏"]];
         
-    }
-    
-    
+        if([[DataBase shareDataBase]addWithNews:self.model tableName:userName]){
+            NSLog(@"%ld",[[DataBase shareDataBase] selectWithTableName:userName].count);
+            [self.itemCollection setImage:[UIImage imageNamed:@"已收藏"]];
+            
+        }
+        
+        
     }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    
     TitleTableViewCell *cell_title=[tableView dequeueReusableCellWithIdentifier:@"cell_id_newsTitle" ];
     ImageTableViewCell *cell_img=[tableView dequeueReusableCellWithIdentifier:@"cell_id_image"];
     WebViewTableViewCell *cell_web=[tableView dequeueReusableCellWithIdentifier:@"cell_id_webView"];
@@ -137,14 +139,14 @@
             
             [cell_img.imV sd_setImageWithURL:[NSURL URLWithString:self.detilModel.img[indexPath.row-1][@"src"]]];
             if(indexPath.row==1&&self.detilModel.img.count>0){
-            self.imageShare=cell_img.imV.image;
+                self.imageShare=cell_img.imV.image;
             }
             cell_img.labelImageTitle.text=self.detilModel.img[indexPath.row-1][@"alt"];
             
             return cell_img;
         }
         else{
-
+            
             NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[self.detilModel.body dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
             
             cell_web.labelBody.attributedText = attrStr;
@@ -187,10 +189,10 @@
         if(data){
             NSDictionary *dicJSON=[NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
             [self.detilModel setValuesForKeysWithDictionary:dicJSON[self.postid]];
-        
+            
             dispatch_async(dispatch_get_main_queue(), ^{
-
-
+                
+                
                 [self.tableView reloadData];
                 
             });
@@ -218,5 +220,6 @@
  // Pass the selected object to the new view controller.
  }
  */
+
 
 @end

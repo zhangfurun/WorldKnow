@@ -1,5 +1,5 @@
 //
-//  NewListViewController.h
+//  NewsListViewController.h
 //  WorldKnow
 //
 //  Created by 张福润 on 2017/3/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewListViewController : UIViewController
+@interface NewsListViewController : UIViewController
 {
     int pageNumber;
 }
@@ -24,8 +24,7 @@
 @property (nonatomic,strong)UIImageView * imageView;
 @property (nonatomic,strong)UILabel * labelHeaderTitle;
 
-///图片的数组
-@property (nonatomic,strong)NSMutableArray * imageArray;
+
 
 ///头条的数组
 @property (nonatomic,strong)NSMutableArray * arrToutiao;

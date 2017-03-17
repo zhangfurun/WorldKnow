@@ -10,7 +10,7 @@
 #define CELLID @"cell_id_Left"
 #import "UIViewController+RESideMenu.h"
 #import "RESideMenu.h"
-#import "NewListViewController.h"
+#import "NewsListViewController.h"
 #import "Choose.h"
 #import "ListViewController.h"
 #import "AllListName.h"
@@ -137,16 +137,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
 

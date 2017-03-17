@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
-#import "NewsListItem.h"
+#import "NewsItem.h"
 @interface DataBase : NSObject
 +(DataBase *)shareDataBase;
 
 
 -(void)openDBWithTable:(NSString *)userName;
 
--(BOOL)addWithNews:(NewsListItem *)model
+-(BOOL)addWithNews:(NewsItem *)model
          tableName:(NSString *)userName;
 
 -(NSMutableArray *)selectWithTableName:(NSString *)userName;
