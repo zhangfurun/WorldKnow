@@ -49,9 +49,8 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR2-v9-PD2">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR2-v9-PD2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
-                        <state key="normal" title="Button"/>
                         <connections>
                             <action selector="onCellBtnTap:" destination="xXV-F8-Gz0" eventType="touchUpInside" id="T0k-6R-ZI8"/>
                         </connections>

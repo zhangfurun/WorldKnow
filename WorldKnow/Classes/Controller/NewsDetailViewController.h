@@ -9,16 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class NewsItem;
-@class FirstDetilModel;
+@class NewsDetailItem;
 
 @interface NewsDetailViewController : UIViewController
-@property (nonatomic,strong)NewsItem * model;
-
-///当前数据Model
-@property (nonatomic,strong)FirstDetilModel * detilModel;
-
-@property (nonatomic,strong)NSString * postid;
-
+@property (nonatomic,strong)NewsItem * newsListItem;
 ///要分享的image
 @property (nonatomic,strong)UIImage * imageShare;
 

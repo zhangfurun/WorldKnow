@@ -8,45 +8,106 @@
 
 #import "NewsDetailViewController.h"
 
-#define CELLID @"cell_id_firstDetil"
-#import "UIImageView+WebCache.h"
-#import "TitleTableViewCell.h"
-#import "ImageTableViewCell.h"
-#import "WebViewTableViewCell.h"
+#import "NewsDetailTextCell.h"
+#import "NewsDetailImageCell.h"
+#import "NewsDetailWebCell.h"
+
+#import "NewsItem.h"
+#import "NewsDetailItem.h"
+
 #import "DataBase.h"
 #import <UMSocialCore/UMSocialCore.h>
 #import <UShareUI/UShareUI.h>
-#import "NewsItem.h"
-#import "FirstDetilModel.h"
+
+#import "UIImageView+WebCache.h"
+
+#define CELLID @"cell_id_firstDetil"
 
 @interface NewsDetailViewController ()<UIWebViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *itemCollection;
 @property (weak, nonatomic) IBOutlet UIButton *buttonModelBack;
 
+///当前数据Model
+@property (nonatomic, strong)NewsDetailItem * detailItem;
+
 
 @end
 
 @implementation NewsDetailViewController
-- (IBAction)backAction:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-//- (IBAction)shareAction:(id)sender {
-//
-//    [UMSocialData defaultData].extConfig.wechatSessionData.url =self.model.url;
-//    [UMSocialSnsService presentSnsIconSheetView:self
-//                                         appKey:YMAPPID
-//                                      shareText:[NSString stringWithFormat:@"[天下通分享],%@ %@",self.detilModel.title,self.model.url]
-//                                     shareImage: self.imageShare
-//                                shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToQQ,UMShareToQzone,UMShareToWechatTimeline,UMShareToWechatSession,nil]
-//                                       delegate:self];
-//
-//
-//
-//}
 
-- (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
-{
+#pragma mark - Life Cycle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setViews];
+    [self setDelegate];
+    [self getDetailDataRequest];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    NSUserDefaults *user=[[NSUserDefaults alloc]init];
+    NSString *userName=[user objectForKey:@"userName"];
+    if(userName){
+        [[DataBase shareDataBase]openDBWithTable:userName];
+        NSArray *arr= [[DataBase shareDataBase]selectWithTableName:userName];
+        for(NewsItem *model in arr){
+            if([model.postid isEqualToString:self.newsListItem.postid]){
+                [self.itemCollection setImage:[UIImage imageNamed:@"已收藏"]];
+            }
+        }
+    }
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [self.tableView reloadData];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [[DataBase shareDataBase]closeDB];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Request
+- (void)getDetailDataRequest {
+    NSString *url=[NSString stringWithFormat:@"http://c.3g.163.com/nc/article/%@/full.html",self.newsListItem.postid];
+    NSLog(@"%@",url);
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if(data){
+            NSDictionary *dicJSON=[NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+            [self.detailItem setValuesForKeysWithDictionary:dicJSON[self.newsListItem.postid]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        }
+    }];
+    //执行
+    [task resume];
+}
+
+#pragma mark - Methods
+- (NewsDetailItem *)detailItem{
+    if(!_detailItem){
+        _detailItem = [[NewsDetailItem alloc]init];
+    }
+    return _detailItem;
+}
+
+-(void)setViews{
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 20;
+}
+
+-(void)setDelegate{
+    
+}
+
+- (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType {
     //创建分享消息对象
     UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
     
@@ -68,41 +129,25 @@
     }];
 }
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self setViews];
-    [self setDelegate];
-    [self setData];
-    
-    // Do any additional setup after loading the view.
+#pragma mark - Action
+- (IBAction)backAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+//- (IBAction)shareAction:(id)sender {
+//
+//    [UMSocialData defaultData].extConfig.wechatSessionData.url =self.model.url;
+//    [UMSocialSnsService presentSnsIconSheetView:self
+//                                         appKey:YMAPPID
+//                                      shareText:[NSString stringWithFormat:@"[天下通分享],%@ %@",self.detilModel.title,self.model.url]
+//                                     shareImage: self.imageShare
+//                                shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToQQ,UMShareToQzone,UMShareToWechatTimeline,UMShareToWechatSession,nil]
+//                                       delegate:self];
+//
+//
+//
+//}
 
--(FirstDetilModel *)detilModel{
-    if(!_detilModel){
-        _detilModel=[[FirstDetilModel alloc]init];
-    }
-    return _detilModel;
-}
--(void)viewWillAppear:(BOOL)animated{
-    
-    NSUserDefaults *user=[[NSUserDefaults alloc]init];
-    NSString *userName=[user objectForKey:@"userName"];
-    if(userName){
-        [[DataBase shareDataBase]openDBWithTable:userName];
-        NSArray *arr= [[DataBase shareDataBase]selectWithTableName:userName];
-        for(NewsItem *model in arr){
-            if([model.postid isEqualToString:self.model.postid]){
-                [self.itemCollection setImage:[UIImage imageNamed:@"已收藏"]];
-            }
-        }
-        
-    }
-}
--(void)viewDidDisappear:(BOOL)animated{
-    [[DataBase shareDataBase]closeDB];
-}
 - (IBAction)collectionAction:(id)sender {
     NSUserDefaults *user=[[NSUserDefaults alloc]init];
     NSString *userName=[user objectForKey:@"userName"];
@@ -110,116 +155,49 @@
         [self performSegueWithIdentifier:@"segue_noLogin" sender:self];
     }else{
         
-        if([[DataBase shareDataBase]addWithNews:self.model tableName:userName]){
+        if([[DataBase shareDataBase]addWithNews:self.newsListItem tableName:userName]){
             NSLog(@"%ld",[[DataBase shareDataBase] selectWithTableName:userName].count);
             [self.itemCollection setImage:[UIImage imageNamed:@"已收藏"]];
-            
         }
-        
-        
     }
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    TitleTableViewCell *cell_title=[tableView dequeueReusableCellWithIdentifier:@"cell_id_newsTitle" ];
-    ImageTableViewCell *cell_img=[tableView dequeueReusableCellWithIdentifier:@"cell_id_image"];
-    WebViewTableViewCell *cell_web=[tableView dequeueReusableCellWithIdentifier:@"cell_id_webView"];
-    
-    if(indexPath.row==0){
-        
-        cell_title.labelTitle.text=self.detilModel.title;
-        cell_title.labelCome.text=self.detilModel.source;
-        cell_title.labelTime.text=self.detilModel.ptime;
-        return cell_title;
-    }
-    else{
-        if(indexPath.row>0&&indexPath.row<self.detilModel.img.count+1){
-            
-            
-            [cell_img.imV sd_setImageWithURL:[NSURL URLWithString:self.detilModel.img[indexPath.row-1][@"src"]]];
-            if(indexPath.row==1&&self.detilModel.img.count>0){
-                self.imageShare=cell_img.imV.image;
+#pragma mark - UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.detailItem.img.count + 1 + 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.row == 0){
+        NewsDetailTextCell *cell = [NewsDetailTextCell cellWithTableView:tableView];
+        cell.detailItem = self.detailItem;
+        return cell;
+    }else {
+        if(indexPath.row > 0 && indexPath.row < self.detailItem.img.count + 1){
+            NewsDetailImageCell *cell = [NewsDetailImageCell cellWithTableView:tableView];
+            cell.imageUrl = self.detailItem.img[indexPath.row - 1][@"src"];
+            cell.title = self.detailItem.img[indexPath.row - 1][@"alt"];
+            if(indexPath.row == 1 && self.detailItem.img.count > 0){
+                self.imageShare = cell.shareImage;
             }
-            cell_img.labelImageTitle.text=self.detilModel.img[indexPath.row-1][@"alt"];
-            
-            return cell_img;
-        }
-        else{
-            
-            NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[self.detilModel.body dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
-            
-            cell_web.labelBody.attributedText = attrStr;
-            return cell_web;
+            return cell;
+        }else {
+            NewsDetailWebCell *cell = [NewsDetailWebCell cellWithTableView:tableView];
+            cell.webString = self.detailItem.body;
+            return cell;
         }
     }
-    
 }
 
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return self.detilModel.img.count+1+1;
-}
--(void)viewDidAppear:(BOOL)animated{
-    [self.tableView reloadData];
-}
--(void)setViews{
-    self.tableView.rowHeight=UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight=2;
-    
-    
-}
-
--(void)setDelegate{
-    
-    
-}
-
-
--(void)setData{
-    NSString *url=[NSString stringWithFormat:@"http://c.3g.163.com/nc/article/%@/full.html",self.postid];
-    NSLog(@"%@",url);
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
-    
-    
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        if(data){
-            NSDictionary *dicJSON=[NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-            [self.detilModel setValuesForKeysWithDictionary:dicJSON[self.postid]];
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                
-                
-                [self.tableView reloadData];
-                
-            });
-        }
-        
-    }];
-    //执行
-    [task resume];
-    
-    
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
-
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (indexPath.row == 0) {
+//        return 90;
+//    }else {
+//        if(indexPath.row > 0 && indexPath.row < self.detailItem.img.count + 1){
+//            return 120;
+//        }else {
+//            return 116;
+//        }
+//    }
+//}
 @end

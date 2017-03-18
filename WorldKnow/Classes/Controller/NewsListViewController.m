@@ -7,6 +7,7 @@
 //
 
 #import "NewsListViewController.h"
+#import "NewsDetailViewController.h"
 
 #import "NewsImagesCell.h"
 #import "NewsListCell.h"
@@ -55,13 +56,11 @@
         self.page.currentPage=0;
         self.scrollView.contentOffset = CGPointMake(0, 0);
         [self getData:[Choose shareWithChoose].userChoose];
-        
     }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 
 #pragma mark - Request
@@ -272,11 +271,15 @@
 
 #pragma mark - NewsListCellDelegate
 - (void)newsListCell:(NewsListCell *)cell didSelectedWithItem:(NewsItem *)item {
-    
+    NewsDetailViewController *newsDetailVC = [[NewsDetailViewController alloc] init];
+    newsDetailVC.newsListItem = item;
+    [self.navigationController pushViewController:newsDetailVC animated:YES];
 }
 
 #pragma mark - NewsImagesCellDelegate
 - (void)newsImagesCell:(NewsImagesCell *)cell didSelectedWithItem:(NewsItem *)item {
-    
+    NewsDetailViewController *newsDetailVC = [[NewsDetailViewController alloc] init];
+    newsDetailVC.newsListItem = item;
+    [self.navigationController pushViewController:newsDetailVC animated:YES];
 }
 @end
