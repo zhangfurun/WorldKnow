@@ -65,10 +65,8 @@ static sqlite3 *db=nil;
     
 }
 
--(NSMutableArray *)selectWithTableName:(NSString *)userName;{
+- (NSMutableArray *)selectWithTableName:(NSString *)userName;{
     NSMutableArray *arr=[NSMutableArray array];
-    
-    
     NSString *sql=[NSString stringWithFormat:@"SELECT * FROM MY_NEWS_%@",userName];
     sqlite3_stmt *stmt=nil;
     

@@ -35,8 +35,7 @@
     return YES;
 }
 
-- (void)confitUShareSettings
-{
+- (void)confitUShareSettings {
     /*
      * 打开图片水印
      */
@@ -55,8 +54,7 @@
 }
 
 
-- (void)configUSharePlatforms
-{
+- (void)configUSharePlatforms {
     
     /* 设置微信的appKey和appSecret */
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" redirectURL:@"http://mobile.umeng.com/social"];
