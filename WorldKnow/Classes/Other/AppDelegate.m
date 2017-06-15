@@ -113,9 +113,9 @@
 - (void)setBaseViewController {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[NewsListViewController alloc] init]];
-    LeftViewController *leftMenuViewController = [[LeftViewController alloc] init];
-    RightViewController *rightMenuViewController = [[RightViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[NewsListViewController new]];
+    LeftViewController *leftMenuViewController = [LeftViewController new];
+    RightViewController *rightMenuViewController = [RightViewController new];
     
     RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
                                                                     leftMenuViewController:leftMenuViewController
@@ -127,6 +127,7 @@
     sideMenuViewController.contentViewShadowOpacity = 0.6;
     sideMenuViewController.contentViewShadowRadius = 12;
     sideMenuViewController.contentViewShadowEnabled = YES;
+    sideMenuViewController.backgroundImage = [UIImage imageNamed:@"desktop.png"];
     self.window.rootViewController = sideMenuViewController;
     
     self.window.backgroundColor = [UIColor whiteColor];
@@ -137,6 +138,11 @@
 #pragma mark - RESideMenu Delegate
 - (void)sideMenu:(RESideMenu *)sideMenu willShowMenuViewController:(UIViewController *)menuViewController {
     NSLog(@"willShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
+    if ([menuViewController isKindOfClass:[LeftViewController class]]) {
+        sideMenu.backgroundImage = [UIImage imageNamed:@"desktop.png"];
+    }else {
+        sideMenu.backgroundImage = [UIImage imageNamed:@"右抽屉背景.png"];
+    }
 }
 
 - (void)sideMenu:(RESideMenu *)sideMenu didShowMenuViewController:(UIViewController *)menuViewController {

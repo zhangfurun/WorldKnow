@@ -47,15 +47,18 @@
     self.locationBtn.layer.shadowOpacity = 0.8;
     self.locationBtn.layer.shadowColor =  [UIColor blackColor].CGColor;
     //    self.arrData = @[@"热点",@"娱乐",@"科技"];
-    [self.arrData addObject:@"头条"];
-    [self.arrData addObject:@"娱乐"];
-    [self.arrData addObject:@"科技"];
-    [self.arrData addObject:@"财经"];
-    [self.arrData addObject:@"健康"];
-    [self.arrData addObject:@"时尚"];
+  
+    [self.arrData addObjectsFromArray:@[@"头条", @"娱乐", @"科技", @"财经", @"健康", @"时尚"]];
 }
 
 #pragma mark - Methods
+- (NSMutableArray *)arrData{
+    if(!_arrData){
+        _arrData = [NSMutableArray array];
+    }
+    return _arrData;
+}
+
 - (void)reloadWeather:(CityModel *)model{
     self.labelTemp.text = [NSString stringWithFormat:@"%@℃~%@℃",model.l_tmp,model.h_tmp];
     self.currentTempLabel.text = model.temp;
@@ -64,14 +67,6 @@
     self.labelWindLevel.text = model.WS;
     self.labelWeather.text = model.weather;
     [self.locationBtn setTitle:model.city forState:(UIControlStateNormal)];
-}
-
-#pragma mark - 懒加载
--(NSMutableArray *)arrData{
-    if(!_arrData){
-        _arrData = [NSMutableArray array];
-    }
-    return _arrData;
 }
 
 #pragma mark - Action
@@ -83,7 +78,6 @@
         WS.arrData = arr;
         [WS.tableView reloadData];
     }];
-
 }
 
 - (IBAction)onLocationBtnTap:(UIButton *)sender {
@@ -92,7 +86,7 @@
     [pick setCityWeatherBlcok:^(CityModel *model) {
         dispatch_async(dispatch_get_main_queue(), ^{
             WS.model = model;
-            [WS reloadWeather:model];
+            [WS reloadWeather:model];   
         });
     }];
 }

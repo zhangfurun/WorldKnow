@@ -254,10 +254,10 @@
                             <constraint firstItem="HEH-E8-lld" firstAttribute="top" secondItem="sLy-xK-q6s" secondAttribute="bottom" constant="15" id="fgH-K1-F8z"/>
                             <constraint firstItem="fLc-79-u3b" firstAttribute="leading" secondItem="1AL-h9-q2U" secondAttribute="leading" id="gfs-tc-09Q"/>
                             <constraint firstItem="sLy-xK-q6s" firstAttribute="leading" secondItem="1AL-h9-q2U" secondAttribute="leading" constant="150" id="ieG-bU-4Az"/>
+                            <constraint firstItem="sLy-xK-q6s" firstAttribute="top" secondItem="Z5l-fD-MQT" secondAttribute="bottom" constant="50" id="jpP-rV-6Ov"/>
                             <constraint firstAttribute="trailing" secondItem="fLc-79-u3b" secondAttribute="trailing" id="kez-i9-6bg">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-40"/>
                             </constraint>
-                            <constraint firstItem="sLy-xK-q6s" firstAttribute="top" secondItem="Z5l-fD-MQT" secondAttribute="bottom" constant="50" id="lGo-nt-a7B"/>
                             <constraint firstItem="y1B-GI-o7g" firstAttribute="trailing" secondItem="U7Z-4z-3g6" secondAttribute="trailing" id="ldg-Vv-cgw"/>
                             <constraint firstItem="HEH-E8-lld" firstAttribute="centerX" secondItem="sLy-xK-q6s" secondAttribute="centerX" id="ngH-fM-F5l"/>
                             <constraint firstItem="fLc-79-u3b" firstAttribute="top" secondItem="1AL-h9-q2U" secondAttribute="top" id="up5-hx-ufc"/>
@@ -271,20 +271,19 @@
                                 <exclude reference="HEH-E8-lld"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="ieG-bU-4Az"/>
-                                <exclude reference="lGo-nt-a7B"/>
-                                <exclude reference="fgH-K1-F8z"/>
-                                <exclude reference="ngH-fM-F5l"/>
-                                <exclude reference="a1n-0A-ob0"/>
-                                <exclude reference="dMx-vW-H7E"/>
-                                <exclude reference="BkV-Sf-DWH"/>
-                                <exclude reference="RmT-xE-gbf"/>
-                                <exclude reference="S9v-Fq-wBp"/>
-                                <exclude reference="ldg-Vv-cgw"/>
                                 <exclude reference="NYN-KV-vWU"/>
                                 <exclude reference="gfs-tc-09Q"/>
                                 <exclude reference="kez-i9-6bg"/>
                                 <exclude reference="up5-hx-ufc"/>
+                                <exclude reference="ieG-bU-4Az"/>
+                                <exclude reference="a1n-0A-ob0"/>
+                                <exclude reference="dMx-vW-H7E"/>
+                                <exclude reference="fgH-K1-F8z"/>
+                                <exclude reference="ngH-fM-F5l"/>
+                                <exclude reference="BkV-Sf-DWH"/>
+                                <exclude reference="RmT-xE-gbf"/>
+                                <exclude reference="S9v-Fq-wBp"/>
+                                <exclude reference="ldg-Vv-cgw"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -296,20 +295,19 @@
                                 <include reference="HEH-E8-lld"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="ieG-bU-4Az"/>
-                                <include reference="lGo-nt-a7B"/>
-                                <include reference="fgH-K1-F8z"/>
-                                <include reference="ngH-fM-F5l"/>
-                                <include reference="a1n-0A-ob0"/>
-                                <include reference="dMx-vW-H7E"/>
-                                <include reference="BkV-Sf-DWH"/>
-                                <include reference="RmT-xE-gbf"/>
-                                <include reference="S9v-Fq-wBp"/>
-                                <include reference="ldg-Vv-cgw"/>
                                 <include reference="NYN-KV-vWU"/>
                                 <include reference="gfs-tc-09Q"/>
                                 <include reference="kez-i9-6bg"/>
                                 <include reference="up5-hx-ufc"/>
+                                <include reference="ieG-bU-4Az"/>
+                                <include reference="a1n-0A-ob0"/>
+                                <include reference="dMx-vW-H7E"/>
+                                <include reference="fgH-K1-F8z"/>
+                                <include reference="ngH-fM-F5l"/>
+                                <include reference="BkV-Sf-DWH"/>
+                                <include reference="RmT-xE-gbf"/>
+                                <include reference="S9v-Fq-wBp"/>
+                                <include reference="ldg-Vv-cgw"/>
                             </mask>
                         </variation>
                     </view>
