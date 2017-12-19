@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,8 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张福润" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWO-6w-aEx">
-                        <rect key="frame" x="10" y="5" width="52" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWO-6w-aEx">
+                        <rect key="frame" x="10" y="5" width="29" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -65,6 +65,7 @@
                     <constraint firstItem="qSj-EU-kAk" firstAttribute="height" secondItem="Iez-Ky-0Ul" secondAttribute="height" id="Fpu-RY-7YR"/>
                     <constraint firstItem="FPW-T3-wbh" firstAttribute="leading" secondItem="1hZ-o1-0QO" secondAttribute="leading" id="IZg-sV-kFt"/>
                     <constraint firstItem="Iez-Ky-0Ul" firstAttribute="leading" secondItem="1hZ-o1-0QO" secondAttribute="leading" constant="10" id="Jbo-8o-Ghg"/>
+                    <constraint firstItem="Gud-RP-gY6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YWO-6w-aEx" secondAttribute="trailing" constant="10" id="LLd-Si-wdQ"/>
                     <constraint firstItem="YWO-6w-aEx" firstAttribute="leading" secondItem="1hZ-o1-0QO" secondAttribute="leading" constant="10" id="RSs-ar-LTF"/>
                     <constraint firstItem="DkL-n6-0H0" firstAttribute="centerY" secondItem="Iez-Ky-0Ul" secondAttribute="centerY" id="bTq-7h-j5U"/>
                     <constraint firstItem="DkL-n6-0H0" firstAttribute="height" secondItem="Iez-Ky-0Ul" secondAttribute="height" id="eE6-DE-rUN"/>
