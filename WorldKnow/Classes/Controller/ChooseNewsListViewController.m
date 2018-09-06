@@ -1,20 +1,20 @@
 //
-//  ListViewController.m
+//  ChooseNewsListViewController.m
 //  WorldKnow
 //
-//  Created by 张福润 on 16/3/2.
-//  Copyright © 2016年 张福润. All rights reserved.
+//  Created by ifenghui on 2018/9/6.
+//  Copyright © 2018年 张福润. All rights reserved.
 //
 
-#import "ListViewController.h"
+#import "ChooseNewsListViewController.h"
 #import "LeftViewController.h"
 #import "ListCollectionViewCell.h"
 #import "AllListName.h"
-@interface ListViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
+@interface ChooseNewsListViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
 @end
 
-@implementation ListViewController
+@implementation ChooseNewsListViewController
 -(NSArray *)arrayAllListName{
     if(!_arrayAllListName){
         _arrayAllListName=[NSArray array];
@@ -23,11 +23,11 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.arr=[NSMutableArray arrayWithObjects:@"科技",@"财经", nil];
+    //    self.arr=[NSMutableArray arrayWithObjects:@"科技",@"财经", nil];
     NSDictionary *dic=[AllListName shareAllList].getAllList;
     self.arrayAllListName=dic.allKeys;
-
-   
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -35,14 +35,14 @@
 
 
 -(void)viewWillAppear:(BOOL)animated{
-
+    
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return self.arrayAllListName.count;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-
+    
     ListCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"cell_collection_list" forIndexPath:indexPath];
     
     if([self.arr containsObject:self.arrayAllListName[indexPath.row]]){
@@ -59,7 +59,7 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     ListCollectionViewCell *cell=(ListCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
     if(cell.labelListName.layer.borderColor==[UIColor redColor].CGColor){
-
+        
         cell.labelListName.layer.borderColor=[UIColor blackColor].CGColor;
         cell.labelListName.textColor=[UIColor blackColor];
         [self.arr removeObject:cell.labelListName.text];
@@ -88,13 +88,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

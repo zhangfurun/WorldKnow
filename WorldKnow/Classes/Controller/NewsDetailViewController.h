@@ -6,12 +6,12 @@
 //  Copyright © 2017年 张福润. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WKBaseViewController.h"
 
 @class NewsItem;
 @class NewsDetailItem;
 
-@interface NewsDetailViewController : UIViewController
+@interface NewsDetailViewController : WKBaseViewController
 @property (nonatomic,strong)NewsItem * newsListItem;
 ///要分享的image
 @property (nonatomic,strong)UIImage * imageShare;

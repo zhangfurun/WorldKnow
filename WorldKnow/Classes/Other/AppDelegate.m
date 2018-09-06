@@ -12,6 +12,7 @@
 #import "LeftViewController.h"
 #import "RightViewController.h"
 #import "NewsListViewController.h"
+#import "WKBaseNavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -113,14 +114,16 @@
 - (void)setBaseViewController {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[NewsListViewController new]];
-    LeftViewController *leftMenuViewController = [LeftViewController new];
-    RightViewController *rightMenuViewController = [RightViewController new];
+    WKBaseNavigationViewController *contentNavigationController = [[WKBaseNavigationViewController alloc] initWithRootViewController:[NewsListViewController initWithXib]];
     
-    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
-                                                                    leftMenuViewController:leftMenuViewController
-                                                                   rightMenuViewController:rightMenuViewController];
-    sideMenuViewController.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
+    WKBaseNavigationViewController *leftNavigationController = [[WKBaseNavigationViewController alloc] initWithRootViewController:[LeftViewController initWithXib]];
+    
+    WKBaseNavigationViewController *rightNavigationController = [[WKBaseNavigationViewController alloc] initWithRootViewController:[RightViewController initWithXib]];
+
+    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:contentNavigationController
+                                                                    leftMenuViewController:leftNavigationController
+                                                                   rightMenuViewController:rightNavigationController];
+    sideMenuViewController.menuPreferredStatusBarStyle = UIStatusBarStyleLightContent; // UIStatusBarStyleLightContent
     sideMenuViewController.delegate = self;
     sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
     sideMenuViewController.contentViewShadowOffset = CGSizeMake(0, 0);
@@ -128,7 +131,9 @@
     sideMenuViewController.contentViewShadowRadius = 12;
     sideMenuViewController.contentViewShadowEnabled = YES;
     sideMenuViewController.backgroundImage = [UIImage imageNamed:@"desktop.png"];
-    self.window.rootViewController = sideMenuViewController;
+    
+     WKBaseNavigationViewController *sideMenuNavigationController = [[WKBaseNavigationViewController alloc] initWithRootViewController:sideMenuViewController];
+    self.window.rootViewController = sideMenuNavigationController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

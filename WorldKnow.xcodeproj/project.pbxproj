@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15432154214129AD0030326A /* ChooseNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15432152214129AD0030326A /* ChooseNewsListViewController.m */; };
+		15432155214129AD0030326A /* ChooseNewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15432153214129AD0030326A /* ChooseNewsListViewController.xib */; };
+		1543215921412A810030326A /* AddressChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1543215721412A810030326A /* AddressChooseViewController.m */; };
+		1543215A21412A810030326A /* AddressChooseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1543215821412A810030326A /* AddressChooseViewController.xib */; };
 		157B11F71E780E2F00A36084 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B11F61E780E2F00A36084 /* NewsItem.m */; };
 		157B12351E7965ED00A36084 /* cityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 157B12301E7965ED00A36084 /* cityList.plist */; };
 		157B12361E7965ED00A36084 /* code_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 157B12311E7965ED00A36084 /* code_1.plist */; };
@@ -62,15 +66,11 @@
 		157B12E61E7A39FC00A36084 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12E51E7A39FC00A36084 /* BaseRequest.m */; };
 		157B12F51E7A463500A36084 /* NSArray+PrintChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12F21E7A463500A36084 /* NSArray+PrintChinese.m */; };
 		157B12F61E7A463500A36084 /* NSDictionary+PrintChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 157B12F41E7A463500A36084 /* NSDictionary+PrintChinese.m */; };
-		15C40E191E7BD3F00021F603 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E001E7BD3F00021F603 /* CollectionViewController.m */; };
 		15C40E1D1E7BD3F00021F603 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E071E7BD3F00021F603 /* LeftViewController.m */; };
 		15C40E1E1E7BD3F00021F603 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C40E081E7BD3F00021F603 /* LeftViewController.xib */; };
-		15C40E1F1E7BD3F00021F603 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E0A1E7BD3F00021F603 /* ListViewController.m */; };
-		15C40E201E7BD3F00021F603 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E0C1E7BD3F00021F603 /* LoginViewController.m */; };
 		15C40E211E7BD3F00021F603 /* NewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E0E1E7BD3F00021F603 /* NewsListViewController.m */; };
 		15C40E221E7BD3F00021F603 /* NewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C40E0F1E7BD3F00021F603 /* NewsListViewController.xib */; };
 		15C40E231E7BD3F00021F603 /* PickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E111E7BD3F00021F603 /* PickViewController.m */; };
-		15C40E241E7BD3F00021F603 /* RegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E131E7BD3F00021F603 /* RegViewController.m */; };
 		15C40E251E7BD3F00021F603 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E151E7BD3F00021F603 /* RightViewController.m */; };
 		15C40E261E7BD3F00021F603 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C40E161E7BD3F00021F603 /* RightViewController.xib */; };
 		15C40E2E1E7BD7510021F603 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E2C1E7BD7510021F603 /* NewsDetailViewController.m */; };
@@ -78,6 +78,17 @@
 		15C40E321E7BDD2D0021F603 /* NewsDetailItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E311E7BDD2D0021F603 /* NewsDetailItem.m */; };
 		15C40E3D1E7BE2320021F603 /* UIView+TTSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E3C1E7BE2320021F603 /* UIView+TTSuperView.m */; };
 		15C40E401E7BEEB20021F603 /* WKBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C40E3F1E7BEEB20021F603 /* WKBaseTableViewCell.m */; };
+		15DDDC76214103D000525B05 /* UIViewController+UIViewControllerInitWithXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DDDC75214103D000525B05 /* UIViewController+UIViewControllerInitWithXib.m */; };
+		15DDDC802141076800525B05 /* WKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DDDC7F2141076800525B05 /* WKBaseViewController.m */; };
+		15DDDC83214107EC00525B05 /* WKBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DDDC82214107EC00525B05 /* WKBaseNavigationViewController.m */; };
+		15DDDC8C21411DE200525B05 /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DDDC8A21411DE200525B05 /* UserLoginViewController.m */; };
+		15DDDC8D21411DE200525B05 /* UserLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DDDC8B21411DE200525B05 /* UserLoginViewController.xib */; };
+		15DDDC9121411E6200525B05 /* UserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DDDC8F21411E6200525B05 /* UserRegisterViewController.m */; };
+		15DDDC9221411E6200525B05 /* UserRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DDDC9021411E6200525B05 /* UserRegisterViewController.xib */; };
+		15DDDC9621411F0400525B05 /* UserCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DDDC9421411F0400525B05 /* UserCollectionViewController.m */; };
+		15DDDC9721411F0400525B05 /* UserCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DDDC9521411F0400525B05 /* UserCollectionViewController.xib */; };
+		15DDDC9A2141212E00525B05 /* UINavigationController+TTFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DDDC982141212D00525B05 /* UINavigationController+TTFullscreenPopGesture.m */; };
+		15DDDC9D214121BB00525B05 /* UIDevice+TTDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DDDC9B214121BB00525B05 /* UIDevice+TTDevice.m */; };
 		2D2C16F81C8DC91F0084BEF4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16F71C8DC91F0084BEF4 /* Security.framework */; };
 		2D2C16FA1C8DC9290084BEF4 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16F91C8DC9290084BEF4 /* libiconv.2.4.0.tbd */; };
 		2D2C16FC1C8DC9320084BEF4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2C16FB1C8DC9320084BEF4 /* SystemConfiguration.framework */; };
@@ -189,6 +200,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15432151214129AD0030326A /* ChooseNewsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseNewsListViewController.h; sourceTree = "<group>"; };
+		15432152214129AD0030326A /* ChooseNewsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseNewsListViewController.m; sourceTree = "<group>"; };
+		15432153214129AD0030326A /* ChooseNewsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseNewsListViewController.xib; sourceTree = "<group>"; };
+		1543215621412A810030326A /* AddressChooseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressChooseViewController.h; sourceTree = "<group>"; };
+		1543215721412A810030326A /* AddressChooseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressChooseViewController.m; sourceTree = "<group>"; };
+		1543215821412A810030326A /* AddressChooseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressChooseViewController.xib; sourceTree = "<group>"; };
 		157B11F51E780E2F00A36084 /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
 		157B11F61E780E2F00A36084 /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
 		157B12301E7965ED00A36084 /* cityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityList.plist; sourceTree = "<group>"; };
@@ -257,22 +274,14 @@
 		157B12F21E7A463500A36084 /* NSArray+PrintChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PrintChinese.m"; sourceTree = "<group>"; };
 		157B12F31E7A463500A36084 /* NSDictionary+PrintChinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PrintChinese.h"; sourceTree = "<group>"; };
 		157B12F41E7A463500A36084 /* NSDictionary+PrintChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PrintChinese.m"; sourceTree = "<group>"; };
-		15C40DFF1E7BD3F00021F603 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		15C40E001E7BD3F00021F603 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		15C40E061E7BD3F00021F603 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		15C40E071E7BD3F00021F603 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		15C40E081E7BD3F00021F603 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
-		15C40E091E7BD3F00021F603 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		15C40E0A1E7BD3F00021F603 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		15C40E0B1E7BD3F00021F603 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		15C40E0C1E7BD3F00021F603 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		15C40E0D1E7BD3F00021F603 /* NewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsListViewController.h; sourceTree = "<group>"; };
 		15C40E0E1E7BD3F00021F603 /* NewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsListViewController.m; sourceTree = "<group>"; };
 		15C40E0F1E7BD3F00021F603 /* NewsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsListViewController.xib; sourceTree = "<group>"; };
 		15C40E101E7BD3F00021F603 /* PickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickViewController.h; sourceTree = "<group>"; };
 		15C40E111E7BD3F00021F603 /* PickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewController.m; sourceTree = "<group>"; };
-		15C40E121E7BD3F00021F603 /* RegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegViewController.h; sourceTree = "<group>"; };
-		15C40E131E7BD3F00021F603 /* RegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegViewController.m; sourceTree = "<group>"; };
 		15C40E141E7BD3F00021F603 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
 		15C40E151E7BD3F00021F603 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
 		15C40E161E7BD3F00021F603 /* RightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightViewController.xib; sourceTree = "<group>"; };
@@ -286,6 +295,25 @@
 		15C40E3C1E7BE2320021F603 /* UIView+TTSuperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTSuperView.m"; sourceTree = "<group>"; };
 		15C40E3E1E7BEEB20021F603 /* WKBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKBaseTableViewCell.h; sourceTree = "<group>"; };
 		15C40E3F1E7BEEB20021F603 /* WKBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKBaseTableViewCell.m; sourceTree = "<group>"; };
+		15DDDC74214103D000525B05 /* UIViewController+UIViewControllerInitWithXib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIViewControllerInitWithXib.h"; sourceTree = "<group>"; };
+		15DDDC75214103D000525B05 /* UIViewController+UIViewControllerInitWithXib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewControllerInitWithXib.m"; sourceTree = "<group>"; };
+		15DDDC7E2141076800525B05 /* WKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBaseViewController.h; sourceTree = "<group>"; };
+		15DDDC7F2141076800525B05 /* WKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBaseViewController.m; sourceTree = "<group>"; };
+		15DDDC81214107EC00525B05 /* WKBaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKBaseNavigationViewController.h; sourceTree = "<group>"; };
+		15DDDC82214107EC00525B05 /* WKBaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKBaseNavigationViewController.m; sourceTree = "<group>"; };
+		15DDDC8921411DE200525B05 /* UserLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLoginViewController.h; sourceTree = "<group>"; };
+		15DDDC8A21411DE200525B05 /* UserLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserLoginViewController.m; sourceTree = "<group>"; };
+		15DDDC8B21411DE200525B05 /* UserLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserLoginViewController.xib; sourceTree = "<group>"; };
+		15DDDC8E21411E6200525B05 /* UserRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserRegisterViewController.h; sourceTree = "<group>"; };
+		15DDDC8F21411E6200525B05 /* UserRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserRegisterViewController.m; sourceTree = "<group>"; };
+		15DDDC9021411E6200525B05 /* UserRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserRegisterViewController.xib; sourceTree = "<group>"; };
+		15DDDC9321411F0400525B05 /* UserCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCollectionViewController.h; sourceTree = "<group>"; };
+		15DDDC9421411F0400525B05 /* UserCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCollectionViewController.m; sourceTree = "<group>"; };
+		15DDDC9521411F0400525B05 /* UserCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCollectionViewController.xib; sourceTree = "<group>"; };
+		15DDDC982141212D00525B05 /* UINavigationController+TTFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TTFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		15DDDC992141212D00525B05 /* UINavigationController+TTFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TTFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		15DDDC9B214121BB00525B05 /* UIDevice+TTDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+TTDevice.m"; sourceTree = "<group>"; };
+		15DDDC9C214121BB00525B05 /* UIDevice+TTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+TTDevice.h"; sourceTree = "<group>"; };
 		2D2C16F71C8DC91F0084BEF4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2D2C16F91C8DC9290084BEF4 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		2D2C16FB1C8DC9320084BEF4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -517,6 +545,7 @@
 		157B11C31E78024F00A36084 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				15DDDC792141041800525B05 /* BaseModel */,
 				157B129A1E7A30D800A36084 /* UserCenter */,
 				157B11F41E780DF100A36084 /* News */,
 			);
@@ -661,6 +690,7 @@
 		157B12AB1E7A321200A36084 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15DDDC7A2141042000525B05 /* BaseView */,
 				157B12E01E7A32D500A36084 /* UserCenter */,
 				157B12DF1E7A32BB00A36084 /* NewsView */,
 			);
@@ -721,6 +751,7 @@
 		15C40DFE1E7BD3F00021F603 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				15DDDC782141040B00525B05 /* BaseViewController */,
 				15C40E2A1E7BD6E80021F603 /* RESideMenuViewController */,
 				15C40E291E7BD6DC0021F603 /* UserCenterViewController */,
 				15C40E281E7BD6CE0021F603 /* NewsViewController */,
@@ -737,10 +768,14 @@
 				15C40E2B1E7BD7510021F603 /* NewsDetailViewController.h */,
 				15C40E2C1E7BD7510021F603 /* NewsDetailViewController.m */,
 				15C40E2D1E7BD7510021F603 /* NewsDetailViewController.xib */,
-				15C40E091E7BD3F00021F603 /* ListViewController.h */,
-				15C40E0A1E7BD3F00021F603 /* ListViewController.m */,
+				15432151214129AD0030326A /* ChooseNewsListViewController.h */,
+				15432152214129AD0030326A /* ChooseNewsListViewController.m */,
+				15432153214129AD0030326A /* ChooseNewsListViewController.xib */,
 				15C40E101E7BD3F00021F603 /* PickViewController.h */,
 				15C40E111E7BD3F00021F603 /* PickViewController.m */,
+				1543215621412A810030326A /* AddressChooseViewController.h */,
+				1543215721412A810030326A /* AddressChooseViewController.m */,
+				1543215821412A810030326A /* AddressChooseViewController.xib */,
 			);
 			name = NewsViewController;
 			sourceTree = "<group>";
@@ -748,12 +783,15 @@
 		15C40E291E7BD6DC0021F603 /* UserCenterViewController */ = {
 			isa = PBXGroup;
 			children = (
-				15C40DFF1E7BD3F00021F603 /* CollectionViewController.h */,
-				15C40E001E7BD3F00021F603 /* CollectionViewController.m */,
-				15C40E0B1E7BD3F00021F603 /* LoginViewController.h */,
-				15C40E0C1E7BD3F00021F603 /* LoginViewController.m */,
-				15C40E121E7BD3F00021F603 /* RegViewController.h */,
-				15C40E131E7BD3F00021F603 /* RegViewController.m */,
+				15DDDC9321411F0400525B05 /* UserCollectionViewController.h */,
+				15DDDC9421411F0400525B05 /* UserCollectionViewController.m */,
+				15DDDC9521411F0400525B05 /* UserCollectionViewController.xib */,
+				15DDDC8921411DE200525B05 /* UserLoginViewController.h */,
+				15DDDC8A21411DE200525B05 /* UserLoginViewController.m */,
+				15DDDC8B21411DE200525B05 /* UserLoginViewController.xib */,
+				15DDDC8E21411E6200525B05 /* UserRegisterViewController.h */,
+				15DDDC8F21411E6200525B05 /* UserRegisterViewController.m */,
+				15DDDC9021411E6200525B05 /* UserRegisterViewController.xib */,
 			);
 			name = UserCenterViewController;
 			sourceTree = "<group>";
@@ -774,10 +812,41 @@
 		15C40E371E7BE0A30021F603 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				15DDDC992141212D00525B05 /* UINavigationController+TTFullscreenPopGesture.h */,
+				15DDDC982141212D00525B05 /* UINavigationController+TTFullscreenPopGesture.m */,
+				15DDDC74214103D000525B05 /* UIViewController+UIViewControllerInitWithXib.h */,
+				15DDDC75214103D000525B05 /* UIViewController+UIViewControllerInitWithXib.m */,
 				15C40E3B1E7BE2320021F603 /* UIView+TTSuperView.h */,
 				15C40E3C1E7BE2320021F603 /* UIView+TTSuperView.m */,
+				15DDDC9C214121BB00525B05 /* UIDevice+TTDevice.h */,
+				15DDDC9B214121BB00525B05 /* UIDevice+TTDevice.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		15DDDC782141040B00525B05 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15DDDC81214107EC00525B05 /* WKBaseNavigationViewController.h */,
+				15DDDC82214107EC00525B05 /* WKBaseNavigationViewController.m */,
+				15DDDC7E2141076800525B05 /* WKBaseViewController.h */,
+				15DDDC7F2141076800525B05 /* WKBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		15DDDC792141041800525B05 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		15DDDC7A2141042000525B05 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		2DB2EC771C60863B0080E41E = {
@@ -845,8 +914,8 @@
 		2DEEE9321E7402A30089CE1F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2DEEE9331E7402A30089CE1F /* Common */,
 				2DEEE9391E7402A30089CE1F /* Other */,
+				2DEEE9331E7402A30089CE1F /* Common */,
 				157B11C31E78024F00A36084 /* Model */,
 				157B12AB1E7A321200A36084 /* View */,
 				15C40DFE1E7BD3F00021F603 /* Controller */,
@@ -1285,6 +1354,7 @@
 			files = (
 				157B12BD1E7A321200A36084 /* NewsListCell.xib in Resources */,
 				157B12941E7A2FD600A36084 /* 登录背景.jpeg in Resources */,
+				15DDDC9721411F0400525B05 /* UserCollectionViewController.xib in Resources */,
 				157B12961E7A2FD600A36084 /* 邮箱.png in Resources */,
 				2DEEEAD01E766AD70089CE1F /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				157B127C1E7A2FD600A36084 /* 列表背景.png in Resources */,
@@ -1309,6 +1379,7 @@
 				157B12811E7A2FD600A36084 /* 已收藏.png in Resources */,
 				157B12351E7965ED00A36084 /* cityList.plist in Resources */,
 				157B12781E7A2FD600A36084 /* 天下通 6.png in Resources */,
+				15DDDC9221411E6200525B05 /* UserRegisterViewController.xib in Resources */,
 				157B128E1E7A2FD600A36084 /* sina图标.png in Resources */,
 				15C40E1E1E7BD3F00021F603 /* LeftViewController.xib in Resources */,
 				157B127D1E7A2FD600A36084 /* list1.png in Resources */,
@@ -1318,6 +1389,7 @@
 				157B12791E7A2FD600A36084 /* add.png in Resources */,
 				15C40E221E7BD3F00021F603 /* NewsListViewController.xib in Resources */,
 				2DB2EC901C60863B0080E41E /* Assets.xcassets in Resources */,
+				15DDDC8D21411DE200525B05 /* UserLoginViewController.xib in Resources */,
 				157B12891E7A2FD600A36084 /* 注销.png in Resources */,
 				157B12921E7A2FD600A36084 /* 注册背景.png in Resources */,
 				15C40E2F1E7BD7510021F603 /* NewsDetailViewController.xib in Resources */,
@@ -1331,6 +1403,7 @@
 				157B12861E7A2FD600A36084 /* 我的收藏.png in Resources */,
 				2D4434E81E7D493000BBD1C2 /* NewsDetailTextCell.xib in Resources */,
 				2DEEEAD61E766AD70089CE1F /* read_me.txt in Resources */,
+				15432155214129AD0030326A /* ChooseNewsListViewController.xib in Resources */,
 				157B128B1E7A2FD600A36084 /* 登录.png in Resources */,
 				157B127E1E7A2FD600A36084 /* 为收藏.png in Resources */,
 				2DEEFA1A1E7700D10089CE1F /* MJRefresh.bundle in Resources */,
@@ -1345,6 +1418,7 @@
 				157B12361E7965ED00A36084 /* code_1.plist in Resources */,
 				2D4434F21E7D531200BBD1C2 /* NewsDetailWebCell.xib in Resources */,
 				157B12911E7A2FD600A36084 /* 手机号.png in Resources */,
+				1543215A21412A810030326A /* AddressChooseViewController.xib in Resources */,
 				157B12BF1E7A321200A36084 /* NewsImagesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1371,10 +1445,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C40E3D1E7BE2320021F603 /* UIView+TTSuperView.m in Sources */,
-				15C40E241E7BD3F00021F603 /* RegViewController.m in Sources */,
 				2DEEEA071E74442F0089CE1F /* SDWebImageDownloader.m in Sources */,
 				2DEEFA171E7700D10089CE1F /* MJRefreshGifHeader.m in Sources */,
-				15C40E1F1E7BD3F00021F603 /* ListViewController.m in Sources */,
+				15DDDC9A2141212E00525B05 /* UINavigationController+TTFullscreenPopGesture.m in Sources */,
+				15DDDC802141076800525B05 /* WKBaseViewController.m in Sources */,
 				2DEEEA101E74442F0089CE1F /* UIView+WebCacheOperation.m in Sources */,
 				157B12A31E7A31D400A36084 /* Choose.m in Sources */,
 				2DEEE96A1E7444260089CE1F /* MBProgressHUD.m in Sources */,
@@ -1395,10 +1469,13 @@
 				2DEEEA0E1E74442F0089CE1F /* UIImageView+HighlightedWebCache.m in Sources */,
 				2DEEEA061E74442F0089CE1F /* SDWebImageDecoder.m in Sources */,
 				2DEEEA031E74442F0089CE1F /* NSData+ImageContentType.m in Sources */,
-				15C40E191E7BD3F00021F603 /* CollectionViewController.m in Sources */,
+				15DDDC9621411F0400525B05 /* UserCollectionViewController.m in Sources */,
+				15DDDC76214103D000525B05 /* UIViewController+UIViewControllerInitWithXib.m in Sources */,
+				15DDDC8C21411DE200525B05 /* UserLoginViewController.m in Sources */,
 				15C40E2E1E7BD7510021F603 /* NewsDetailViewController.m in Sources */,
 				2DEEE96B1E7444260089CE1F /* README.mdown in Sources */,
 				2DEEEA3C1E763A080089CE1F /* RECommonFunctions.m in Sources */,
+				15DDDC9121411E6200525B05 /* UserRegisterViewController.m in Sources */,
 				157B12BE1E7A321200A36084 /* NewsImagesCell.m in Sources */,
 				2DEEFA1C1E7700D10089CE1F /* UIScrollView+MJExtension.m in Sources */,
 				2DEEEA3E1E763A080089CE1F /* UIViewController+RESideMenu.m in Sources */,
@@ -1411,9 +1488,9 @@
 				157B12F51E7A463500A36084 /* NSArray+PrintChinese.m in Sources */,
 				2DEEFA1B1E7700D10089CE1F /* MJRefreshConst.m in Sources */,
 				15C40E401E7BEEB20021F603 /* WKBaseTableViewCell.m in Sources */,
+				15DDDC9D214121BB00525B05 /* UIDevice+TTDevice.m in Sources */,
 				2DEEEA0A1E74442F0089CE1F /* SDWebImagePrefetcher.m in Sources */,
 				2DEEFA121E7700D10089CE1F /* MJRefreshAutoNormalFooter.m in Sources */,
-				15C40E201E7BD3F00021F603 /* LoginViewController.m in Sources */,
 				2DEEEA0B1E74442F0089CE1F /* UIButton+WebCache.m in Sources */,
 				15C40E211E7BD3F00021F603 /* NewsListViewController.m in Sources */,
 				2DEEFA211E77032F0089CE1F /* GDataXMLNode.m in Sources */,
@@ -1421,15 +1498,18 @@
 				2DEEFA1E1E7700D10089CE1F /* UIView+MJExtension.m in Sources */,
 				2DEEFA181E7700D10089CE1F /* MJRefreshNormalHeader.m in Sources */,
 				2D4434E71E7D493000BBD1C2 /* NewsDetailTextCell.m in Sources */,
+				1543215921412A810030326A /* AddressChooseViewController.m in Sources */,
 				2DEEEA3D1E763A080089CE1F /* RESideMenu.m in Sources */,
 				2DEEFA151E7700D10089CE1F /* MJRefreshBackNormalFooter.m in Sources */,
 				157B12A21E7A31D400A36084 /* AllListName.m in Sources */,
+				15432154214129AD0030326A /* ChooseNewsListViewController.m in Sources */,
 				157B12BC1E7A321200A36084 /* NewsListCell.m in Sources */,
 				2DEEF9CC1E76FF900089CE1F /* AppDelegate.m in Sources */,
 				2D4434F11E7D531200BBD1C2 /* NewsDetailWebCell.m in Sources */,
 				15C40E231E7BD3F00021F603 /* PickViewController.m in Sources */,
 				2DEEEA021E74442F0089CE1F /* README.md in Sources */,
 				2DEEFA131E7700D10089CE1F /* MJRefreshAutoStateFooter.m in Sources */,
+				15DDDC83214107EC00525B05 /* WKBaseNavigationViewController.m in Sources */,
 				2DEEFA161E7700D10089CE1F /* MJRefreshBackStateFooter.m in Sources */,
 				157B12A91E7A31E200A36084 /* CityModel.m in Sources */,
 				2DEEEA051E74442F0089CE1F /* SDWebImageCompat.m in Sources */,

@@ -26,13 +26,15 @@
 #import <UIKit/UIKit.h>
 #import "UIViewController+RESideMenu.h"
 
+#import "WKBaseViewController.h"
+
 #ifndef IBInspectable
 #define IBInspectable
 #endif
 
 @protocol RESideMenuDelegate;
 
-@interface RESideMenu : UIViewController <UIGestureRecognizerDelegate>
+@interface RESideMenu : WKBaseViewController <UIGestureRecognizerDelegate>
 
 #if __IPHONE_8_0
 @property (strong, readwrite, nonatomic) IBInspectable NSString *contentViewStoryboardID;

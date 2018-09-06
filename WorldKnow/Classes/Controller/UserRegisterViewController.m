@@ -1,16 +1,16 @@
 //
-//  RegViewController.m
+//  UserRegisterViewController.m
 //  WorldKnow
 //
-//  Created by 张福润 on 16/3/3.
-//  Copyright © 2016年 张福润. All rights reserved.
+//  Created by ifenghui on 2018/9/6.
+//  Copyright © 2018年 张福润. All rights reserved.
 //
 
-#import "RegViewController.h"
+#import "UserRegisterViewController.h"
 
 #import <AVOSCloud/AVUser.h>
 
-@interface RegViewController ()<UITextFieldDelegate>
+@interface UserRegisterViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textFieldUserName;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPasswordAgain;
@@ -20,20 +20,25 @@
 
 @end
 
-@implementation RegViewController
+@implementation UserRegisterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if (@available(iOS 11.0, *)) {
+        if ([self.scrollView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+            self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+    }
     self.scrollView.scrollEnabled=NO;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     // Do any additional setup after loading the view.
 }
 
--(void)keyboardWillShow:(id)sender{
+- (void)keyboardWillShow:(id)sender{
     self.scrollView.scrollEnabled=YES;
 }
--(void)keyboardWillHide:(id)sender{
+- (void)keyboardWillHide:(id)sender{
     self.scrollView.scrollEnabled=NO;
     [UIView animateWithDuration:1 animations:^{
         self.scrollView.contentOffset=CGPointMake(0, 0);
@@ -43,7 +48,7 @@
 #pragma mark - 注册事件
 - (IBAction)RegAction:(id)sender {
     
-
+    
     
     UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"提示信息" message:@"注册成功" preferredStyle: UIAlertControllerStyleAlert];
     if(self.textFieldUserName.text.length!=0&&self.textFieldPassword.text.length!=0){
@@ -62,7 +67,7 @@
                 if (succeeded) {
                     UIAlertAction *action=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         
-                       
+                        
                         
                         [self dismissViewControllerAnimated:self completion:^{
                             
@@ -110,7 +115,7 @@
         [self presentViewController:alert animated:YES completion:nil];
         
     }
-
+    
     
     
     
@@ -124,7 +129,7 @@
 }
 - (IBAction)tapAction:(id)sender {
     [self.view endEditing:YES];
-
+    
     
 }
 
@@ -134,13 +139,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

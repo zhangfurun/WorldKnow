@@ -8,6 +8,12 @@
 
 #import "RightViewController.h"
 
+#import "RESideMenu.h"
+
+#import "UIView+TTSuperView.h"
+
+#import "UserLoginViewController.h"
+
 @interface RightViewController ()<UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *userHeaderImageView;
@@ -18,13 +24,14 @@
 @implementation RightViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.navigationController.navigationBarHidden = YES;
     self.userHeaderImageView.layer.cornerRadius=150/2;
     self.userHeaderImageView.layer.masksToBounds=YES;
-    //    self.ImageViewUserHeader.backgroundColor=[UIColor whiteColor];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    NSUserDefaults *user=[[NSUserDefaults alloc]init];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSUserDefaults *user = [[NSUserDefaults alloc]init];
     if([user boolForKey:@"login"]){
         [self.loginBtn setImage:[UIImage imageNamed:@"注销"] forState:(UIControlStateNormal)];
         
@@ -59,17 +66,20 @@
         [self presentViewController:alert animated:YES completion:nil];
     }
     else{
-        [self performSegueWithIdentifier:@"segue_loginOeCancel" sender:self];
+        UserLoginViewController *user = [UserLoginViewController initWithXib];
+        [self.sideMenuViewController.navigationController pushViewController:user animated:YES];
+//        [self.sideMenuViewController hideMenuViewController];
     }
     
 }
 
--(void)mainAction:(NSUserDefaults *)user{
+- (void)mainAction:(NSUserDefaults *)user{
     self.userNameLabel.text=@"";
     [user removeObjectForKey:@"userName"];
     [user setBool:NO forKey:@"login"];
     [self.loginBtn setImage:[UIImage imageNamed:@"登录"] forState:(UIControlStateNormal)];
 }
+
 - (IBAction)onCollectionBtnTap:(id)sender {
     NSUserDefaults *user=[[NSUserDefaults alloc]init];
     NSString *userName=[user objectForKey:@"userName"];
@@ -81,12 +91,6 @@
     }
     
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-
-}
-
 
 @end
 

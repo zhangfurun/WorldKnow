@@ -36,6 +36,12 @@
 #pragma mark - Left Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.hideNavigationBar = NO;
+    if (@available(iOS 11.0, *)) {
+        if ([self.scrollView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+            self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+    }
     flag = 0;
     self.navigationItem.title = [Choose shareWithChoose].title;
     [self getData:[Choose shareWithChoose].userChoose];

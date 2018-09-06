@@ -1,16 +1,16 @@
 //
-//  LoginViewController.m
+//  UserLoginViewController.m
 //  WorldKnow
 //
-//  Created by 张福润 on 16/3/3.
-//  Copyright © 2016年 张福润. All rights reserved.
+//  Created by ifenghui on 2018/9/6.
+//  Copyright © 2018年 张福润. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "UserLoginViewController.h"
 #import <AVOSCloud/AVUser.h>
 #import <UMSocialCore/UMSocialCore.h>
 
-@interface LoginViewController ()
+@interface UserLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewBackGround;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldUserName;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;
@@ -18,12 +18,17 @@
 
 @end
 
-@implementation LoginViewController
+@implementation UserLoginViewController
 
 #pragma mark - Left Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.scrollView.scrollEnabled=NO;
+    if (@available(iOS 11.0, *)) {
+        if ([self.scrollView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+            self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+    }
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     // Do any additional setup after loading the view.
@@ -215,13 +220,13 @@
         self.scrollView.contentOffset=CGPointMake(0, 0);
     }];
 }
--(void)viewWillAppear:(BOOL)animated{
+
+- (void)viewWillAppear:(BOOL)animated{
     NSUserDefaults *user=[NSUserDefaults standardUserDefaults];
     if([user boolForKey:@"login"]){
         self.textFieldUserName.text=[user objectForKey:@"userName"];
     }
     
 }
-
-
 @end
+

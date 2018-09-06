@@ -1,16 +1,16 @@
 //
-//  CollectionViewController.m
+//  UserCollectionViewController.m
 //  WorldKnow
 //
-//  Created by 张福润 on 16/3/4.
-//  Copyright © 2016年 张福润. All rights reserved.
+//  Created by ifenghui on 2018/9/6.
+//  Copyright © 2018年 张福润. All rights reserved.
 //
 
-#import "CollectionViewController.h"
+#import "UserCollectionViewController.h"
 #import "DataBase.h"
 #import "NewsDetailViewController.h"
 //#import "CollectionTableViewCell.h"
-@interface CollectionViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface UserCollectionViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSIndexPath *index;
 }
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation CollectionViewController
+@implementation UserCollectionViewController
 - (IBAction)editAction:(id)sender {
     self.editing=!self.editing;
 }
@@ -51,7 +51,7 @@
 }
 
 
-    
+
 
 
 
@@ -92,7 +92,7 @@
     UIView *view=[[UIView alloc]initWithFrame:CGRectMake(0, 0, kWith, 80)];
     UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"我的收藏"]];
     imageView.center=CGPointMake(kWith/2, 40);
-   //图片渲染
+    //图片渲染
     imageView.image = [imageView.image imageWithRenderingMode:(UIImageRenderingModeAlwaysTemplate)];
     imageView.tintColor = [UIColor blackColor];
     [view addSubview:imageView];
@@ -110,10 +110,10 @@
     return 80;
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
+    
     id des = segue.destinationViewController;
     NewsItem *model=self.arrayAlldata[index.row];
-     NSLog(@"model.postid=%@",model.postid);
+    NSLog(@"model.postid=%@",model.postid);
     [des setValue:model.postid forKey:@"postid"];
 }
 
@@ -135,13 +135,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
+

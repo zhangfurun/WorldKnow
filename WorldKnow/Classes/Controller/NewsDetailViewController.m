@@ -38,6 +38,7 @@
 
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
+    self.hideNavigationBar = NO;
     [super viewDidLoad];
     [self setViews];
     [self setDelegate];

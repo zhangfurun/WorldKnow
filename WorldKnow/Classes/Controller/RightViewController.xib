@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,9 +22,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="右抽屉背景.png" translatesAutoresizingMaskIntoConstraints="NO" id="LdT-b3-MEm">
-                    <rect key="frame" x="0.0" y="0.0" width="454" height="736"/>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="笑脸.png" translatesAutoresizingMaskIntoConstraints="NO" id="O2Y-LG-56o">
                     <rect key="frame" x="189" y="128" width="150" height="150"/>
                     <gestureRecognizers/>
@@ -102,25 +99,18 @@
             <constraints>
                 <constraint firstItem="oks-1U-Q9c" firstAttribute="centerX" secondItem="O2Y-LG-56o" secondAttribute="centerX" id="2Aw-or-DDU"/>
                 <constraint firstItem="gTC-RU-dkO" firstAttribute="trailing" secondItem="O2Y-LG-56o" secondAttribute="trailing" id="53T-6H-GZ5"/>
-                <constraint firstItem="LdT-b3-MEm" firstAttribute="leading" secondItem="WS7-tI-wvP" secondAttribute="leading" id="7uC-4U-h4d"/>
-                <constraint firstAttribute="trailing" secondItem="LdT-b3-MEm" secondAttribute="trailing" id="Esl-sl-skc">
-                    <variation key="heightClass=regular-widthClass=compact" constant="-40"/>
-                </constraint>
                 <constraint firstItem="gTC-RU-dkO" firstAttribute="top" secondItem="O2Y-LG-56o" secondAttribute="bottom" constant="50" id="HOx-3S-3gA"/>
                 <constraint firstItem="abG-tB-BTr" firstAttribute="leading" secondItem="gTC-RU-dkO" secondAttribute="leading" id="OXP-xg-zMe"/>
-                <constraint firstAttribute="bottom" secondItem="LdT-b3-MEm" secondAttribute="bottom" id="TUe-zu-bzN"/>
                 <constraint firstItem="abG-tB-BTr" firstAttribute="height" secondItem="gTC-RU-dkO" secondAttribute="height" id="TpX-vc-IIn"/>
                 <constraint firstItem="gTC-RU-dkO" firstAttribute="centerY" secondItem="WS7-tI-wvP" secondAttribute="centerY" id="Xmx-h5-4XQ"/>
                 <constraint firstItem="O2Y-LG-56o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WS7-tI-wvP" secondAttribute="leading" constant="150" id="hfN-5a-Cl1"/>
                 <constraint firstItem="oks-1U-Q9c" firstAttribute="top" secondItem="O2Y-LG-56o" secondAttribute="bottom" constant="15" id="j0G-ku-dU5"/>
-                <constraint firstItem="LdT-b3-MEm" firstAttribute="top" secondItem="WS7-tI-wvP" secondAttribute="top" id="jtq-Cq-fqi"/>
                 <constraint firstAttribute="trailing" secondItem="O2Y-LG-56o" secondAttribute="trailing" priority="750" constant="75" id="lVc-ha-hTR"/>
                 <constraint firstItem="abG-tB-BTr" firstAttribute="trailing" secondItem="gTC-RU-dkO" secondAttribute="trailing" id="n8T-Un-tqp"/>
                 <constraint firstItem="abG-tB-BTr" firstAttribute="top" secondItem="gTC-RU-dkO" secondAttribute="bottom" constant="50" id="o75-7D-l7o"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
-                    <exclude reference="LdT-b3-MEm"/>
                     <exclude reference="O2Y-LG-56o"/>
                     <exclude reference="gTC-RU-dkO"/>
                     <exclude reference="abG-tB-BTr"/>
@@ -135,15 +125,10 @@
                     <exclude reference="TpX-vc-IIn"/>
                     <exclude reference="n8T-Un-tqp"/>
                     <exclude reference="o75-7D-l7o"/>
-                    <exclude reference="7uC-4U-h4d"/>
-                    <exclude reference="Esl-sl-skc"/>
-                    <exclude reference="TUe-zu-bzN"/>
-                    <exclude reference="jtq-Cq-fqi"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
-                    <include reference="LdT-b3-MEm"/>
                     <include reference="O2Y-LG-56o"/>
                     <include reference="gTC-RU-dkO"/>
                     <include reference="abG-tB-BTr"/>
@@ -158,17 +143,12 @@
                     <include reference="TpX-vc-IIn"/>
                     <include reference="n8T-Un-tqp"/>
                     <include reference="o75-7D-l7o"/>
-                    <include reference="7uC-4U-h4d"/>
-                    <include reference="Esl-sl-skc"/>
-                    <include reference="TUe-zu-bzN"/>
-                    <include reference="jtq-Cq-fqi"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="-40" y="-803"/>
+            <point key="canvasLocation" x="-101" y="-837"/>
         </view>
     </objects>
     <resources>
-        <image name="右抽屉背景.png" width="1080" height="1920"/>
         <image name="收藏.png" width="138" height="80"/>
         <image name="登录.png" width="138" height="80"/>
         <image name="笑脸.png" width="128" height="128"/>

@@ -1,16 +1,17 @@
 //
-//  ListViewController.h
+//  ChooseNewsListViewController.h
 //  WorldKnow
 //
-//  Created by 张福润 on 16/3/2.
-//  Copyright © 2016年 张福润. All rights reserved.
+//  Created by ifenghui on 2018/9/6.
+//  Copyright © 2018年 张福润. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WKBaseViewController.h"
+
 #define SEGUEID @"segue_list"
 
 typedef void(^backBlock) (NSMutableArray * arr);
-@interface ListViewController : UIViewController
+@interface ChooseNewsListViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonBack;

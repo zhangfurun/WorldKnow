@@ -6,9 +6,9 @@
 //  Copyright © 2017年 张福润. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WKBaseViewController.h"
 
-@interface NewsListViewController : UIViewController
+@interface NewsListViewController : WKBaseViewController
 {
     int pageNumber;
 }

@@ -274,7 +274,7 @@
     if (!self.leftMenuViewController) {
         return;
     }
-    [self.leftMenuViewController beginAppearanceTransition:YES animated:YES];
+    [self.leftMenuViewController beginAppearanceTransition:YES animated:NO];
     self.leftMenuViewController.view.hidden = NO;
     self.rightMenuViewController.view.hidden = YES;
     [self.view.window endEditing:YES];
@@ -321,7 +321,7 @@
     if (!self.rightMenuViewController) {
         return;
     }
-    [self.rightMenuViewController beginAppearanceTransition:YES animated:YES];
+    [self.rightMenuViewController beginAppearanceTransition:YES animated:NO];
     self.leftMenuViewController.view.hidden = YES;
     self.rightMenuViewController.view.hidden = NO;
     [self.view.window endEditing:YES];

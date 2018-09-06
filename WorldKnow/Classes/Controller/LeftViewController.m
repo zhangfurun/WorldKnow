@@ -8,7 +8,7 @@
 
 #import "LeftViewController.h"
 #import "PickViewController.h"
-#import "ListViewController.h"
+#import "ChooseNewsListViewController.h"
 #import "NewsListViewController.h"
 
 #import "Choose.h"
@@ -39,7 +39,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    if (@available(iOS 11.0, *)) {
+        if ([self.tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
+            self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+    }
     self.locationBtn.layer.cornerRadius = 5;
     self.locationBtn.layer.masksToBounds = YES;
     self.locationBtn.backgroundColor = [UIColor colorWithRed:44/255.0 green:178/255.0 blue:219/255.0 alpha:1.0];
@@ -71,7 +75,7 @@
 
 #pragma mark - Action
 - (IBAction)onAddBtnTap:(UIButton *)sender {
-    ListViewController *list = [ListViewController new];
+    ChooseNewsListViewController *list = [ChooseNewsListViewController initWithXib];
     [list setValue:self.arrData forKey:@"arr"];
     __weak typeof(self) WS = self;
     [list setBlock:^(NSMutableArray *arr){

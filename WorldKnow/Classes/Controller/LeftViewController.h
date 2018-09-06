@@ -6,9 +6,11 @@
 //  Copyright © 2017年 张福润. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WKBaseViewController.h"
+
 #import "CityModel.h"
-@interface LeftViewController : UIViewController
+
+@interface LeftViewController : WKBaseViewController
 @property (nonatomic,strong)NSMutableArray * arrData;
 @property (nonatomic,strong)CityModel * model;
 @end
