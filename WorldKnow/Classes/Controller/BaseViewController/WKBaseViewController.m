@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     self.hideNavigationBar = YES;
     [super viewDidLoad];
+    self.tt_prefersNavigationBarHidden = YES;
     if (ISIPAD) {
         self.orientation = UIInterfaceOrientationMaskLandscape;
     }

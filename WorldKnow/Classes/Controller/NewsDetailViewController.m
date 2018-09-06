@@ -46,6 +46,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     NSUserDefaults *user=[[NSUserDefaults alloc]init];
     NSString *userName=[user objectForKey:@"userName"];
     if(userName){
@@ -59,17 +60,14 @@
     }
 }
 
--(void)viewDidAppear:(BOOL)animated{
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self.tableView reloadData];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
     [[DataBase shareDataBase]closeDB];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Request

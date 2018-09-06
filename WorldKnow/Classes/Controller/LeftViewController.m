@@ -123,11 +123,5 @@
                                                  animated:YES];
     [self.sideMenuViewController hideMenuViewController];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
 

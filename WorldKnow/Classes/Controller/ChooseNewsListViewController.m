@@ -34,8 +34,8 @@
 
 
 
--(void)viewWillAppear:(BOOL)animated{
-    
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

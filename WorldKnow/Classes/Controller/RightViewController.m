@@ -24,9 +24,12 @@
 @implementation RightViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.navigationController.navigationBarHidden = YES;
-    self.userHeaderImageView.layer.cornerRadius=150/2;
-    self.userHeaderImageView.layer.masksToBounds=YES;
+    self.tt_prefersNavigationBarHidden = YES;
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [self.userHeaderImageView setLayerCornerRadius];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -73,7 +76,7 @@
     
 }
 
-- (void)mainAction:(NSUserDefaults *)user{
+- (void)mainAction:(NSUserDefaults *)user {
     self.userNameLabel.text=@"";
     [user removeObjectForKey:@"userName"];
     [user setBool:NO forKey:@"login"];

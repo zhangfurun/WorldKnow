@@ -34,10 +34,15 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    if([user boolForKey:@"login"]){
+        self.textFieldUserName.text=[user objectForKey:@"userName"];
+    }
+    
 }
+
 #pragma mark - Methods
 - (void)getUserInfoForPlatform:(UMSocialPlatformType)platformType
 {
@@ -210,23 +215,15 @@
     }
 }
 
--(void)keyboardWillShow:(id)sender{
+- (void)keyboardWillShow:(id)sender{
     self.scrollView.scrollEnabled=YES;
 }
 
--(void)keyboardWillHide:(id)sender{
+- (void)keyboardWillHide:(id)sender{
     self.scrollView.scrollEnabled=NO;
     [UIView animateWithDuration:1 animations:^{
         self.scrollView.contentOffset=CGPointMake(0, 0);
     }];
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    NSUserDefaults *user=[NSUserDefaults standardUserDefaults];
-    if([user boolForKey:@"login"]){
-        self.textFieldUserName.text=[user objectForKey:@"userName"];
-    }
-    
 }
 @end
 
