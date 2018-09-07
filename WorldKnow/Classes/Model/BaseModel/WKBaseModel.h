@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "NSObject+YYModel.h"
 
-@interface WKBaseModel : NSObject
+@interface WKBaseModel : NSObject<NSCoding, NSCopying>
 
 @end

@@ -24,7 +24,6 @@
 @implementation RightViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tt_prefersNavigationBarHidden = YES;
 }
 
 - (void)viewDidLayoutSubviews {

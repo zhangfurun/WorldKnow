@@ -10,7 +10,7 @@
 
 #import "NewsItem.h"
 
-#import "UIImageView+WebCache.h"
+#import "YYWebImage.h"
 
 @interface NewsImagesCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewFirst;
@@ -31,9 +31,9 @@
     _item = item;
     self.titleLabel.text = _item.title;
     self.talkLabel.text=[NSString stringWithFormat:@"%@回复",_item.replyCount];
-    [self.imageViewFirst sd_setImageWithURL:[NSURL URLWithString:_item.imgsrc]];
-    [self.imageViewSecond sd_setImageWithURL:[NSURL URLWithString:_item.imgextra[0][@"imgsrc"]]];
-    [self.imageViewThree sd_setImageWithURL:[NSURL URLWithString:_item.imgextra[1][@"imgsrc"]]];
+    [self.imageViewFirst setYy_imageURL:[NSURL URLWithString:_item.imgsrc]];
+    [self.imageViewSecond setYy_imageURL:[NSURL URLWithString:_item.imgextra[0][@"imgsrc"]]];
+    [self.imageViewThree setYy_imageURL:[NSURL URLWithString:_item.imgextra[1][@"imgsrc"]]];
 }
 
 #pragma mark - Action

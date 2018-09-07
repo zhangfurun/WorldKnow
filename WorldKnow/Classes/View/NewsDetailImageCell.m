@@ -10,7 +10,7 @@
 
 #import "NewsDetailItem.h"
 
-#import "UIImageView+WebCache.h"
+#import "YYWebImage.h"
 
 @interface NewsDetailImageCell ()
 ///图片
@@ -32,7 +32,7 @@
 
 - (void)setImageUrl:(NSString *)imageUrl {
     _imageUrl = imageUrl;
-    [self.newsImageView sd_setImageWithURL:[NSURL URLWithString:_imageUrl] placeholderImage:nil options:SDWebImageRetryFailed];
+    [self.newsImageView yy_setImageWithURL:[NSURL URLWithString:_imageUrl] options:YYWebImageOptionProgressiveBlur];
 }
 
 - (UIImage *)shareImage {

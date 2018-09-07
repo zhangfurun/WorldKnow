@@ -10,9 +10,10 @@
 
 #import "NewsItem.h"
 
-#import "UIImageView+WebCache.h"
+//#import "UIImageView+WebCache.h"
 
 #import "UIView+TTSuperView.h"
+#import "YYWebImage.h"
 
 @interface NewsListCell ()
 
@@ -32,7 +33,9 @@
 
 - (void)setItem:(NewsItem *)item {
     _item = item;
-    [self.newsImageView sd_setImageWithURL:[NSURL URLWithString:_item.imgsrc] placeholderImage:nil options:SDWebImageRetryFailed];
+    [self.newsImageView yy_setImageWithURL:[NSURL URLWithString:_item.imgsrc] placeholder:nil options:YYWebImageOptionProgressiveBlur completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+        
+    }];
     if(_item.ltitle.length == 0){
         self.titleLabel.text = _item.title;
     }else{

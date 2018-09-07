@@ -23,7 +23,7 @@
 #pragma mark - Left Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.scrollView.scrollEnabled=NO;
+    self.scrollView.scrollEnabled = NO;
     if (@available(iOS 11.0, *)) {
         if ([self.scrollView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)]) {
             self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;

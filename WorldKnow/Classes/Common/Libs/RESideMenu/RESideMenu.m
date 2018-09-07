@@ -50,6 +50,7 @@
 {
     self = [super init];
     if (self) {
+        self.tt_prefersNavigationBarHidden = YES;
         [self commonInit];
     }
     return self;

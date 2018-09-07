@@ -14,6 +14,8 @@
 #import "NewsListViewController.h"
 #import "WKBaseNavigationViewController.h"
 
+#import "WKDataCacheManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -28,12 +30,19 @@
     [AVOSCloud setApplicationId:APPID
                       clientKey:APPKEY];
     //友盟
-     [[UMSocialManager defaultManager] setUmSocialAppkey:YMAPPID];
+    [[UMSocialManager defaultManager] setUmSocialAppkey:YMAPPID];
+    
+    // 文件夹
+    [self wkFolderInit];
     
     [self configUSharePlatforms];
     
     [self confitUShareSettings];
     return YES;
+}
+
+- (void)wkFolderInit {
+    [WKDataCacheManager initCacheManagerFolder];
 }
 
 - (void)confitUShareSettings {

@@ -17,7 +17,7 @@
 #import "Choose.h"
 #import "MJRefresh.h"
 
-#import "UIImageView+WebCache.h"
+#import "YYWebImage.h"
 
 #define CELLID @"cell_id_first"
 
@@ -88,8 +88,7 @@
         if(data){
             NSDictionary *dicJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
             for(NSDictionary *dealsDic in dicJSON[sender]){
-                NewsItem *model = [[NewsItem alloc]init];
-                [model setValuesForKeysWithDictionary:dealsDic];
+                NewsItem *model = [NewsItem modelWithDictionary:dealsDic];
                 //                if(model.docid.length>0&&model.imgsrc.length>0&&model.digest.length>0&&model.ltitle.length>0){
                 if(([model.replyCount integerValue] > 50) && (self.arrToutiao.count < 6)){
                     [self.arrToutiao addObject:dealsDic];
@@ -143,13 +142,13 @@
         self.scrollView.pagingEnabled=YES;
         for(int i = 0;i < self.arrToutiao.count; i++){
             UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(i*kWith, 0, kWith, 200)];
-            [imageView sd_setImageWithURL:[NSURL URLWithString:self.arrToutiao[i][@"imgsrc"]]];
+            [imageView setYy_imageURL:[NSURL URLWithString:self.arrToutiao[i][@"imgsrc"]]];
             [self.scrollView addSubview:imageView];
         }
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
         [viewCustom addGestureRecognizer:tap];
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(self.arrToutiao.count*kWith, 0, kWith, 200)];
-        [imageView sd_setImageWithURL:[NSURL URLWithString:self.arrToutiao.firstObject[@"imgsrc"]]];
+        [imageView setYy_imageURL:[NSURL URLWithString:self.arrToutiao.firstObject[@"imgsrc"]]];
         [self.scrollView addSubview:imageView];
         
         self.page = [[UIPageControl alloc]initWithFrame:CGRectMake((kWith) - self.arrToutiao.count * 20, 200 - 15, (self.arrToutiao.count * 20), 15)];

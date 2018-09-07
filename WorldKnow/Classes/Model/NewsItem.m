@@ -9,7 +9,7 @@
 #import "NewsItem.h"
 
 @implementation NewsItem
--(void)setValue:(id)value forUndefinedKey:(NSString *)key{
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key{
     
 }
 @end

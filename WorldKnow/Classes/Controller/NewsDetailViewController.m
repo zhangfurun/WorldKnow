@@ -15,11 +15,13 @@
 #import "NewsItem.h"
 #import "NewsDetailItem.h"
 
+#import "WKDataCacheManager.h"
+
 #import "DataBase.h"
 #import <UMSocialCore/UMSocialCore.h>
 #import <UShareUI/UShareUI.h>
 
-#import "UIImageView+WebCache.h"
+#import "YYWebImage.h"
 
 #define CELLID @"cell_id_firstDetil"
 
@@ -38,11 +40,13 @@
 
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
-    self.hideNavigationBar = NO;
     [super viewDidLoad];
+    self.hideNavigationBar = NO;
     [self setViews];
     [self setDelegate];
     [self getDetailDataRequest];
+    
+//    [WKDataCacheManager newsDetailCache:self.newsListItem];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
