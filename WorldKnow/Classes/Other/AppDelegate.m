@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <UMSocialCore/UMSocialCore.h>
+//#import <UMSocialCore/UMSocialCore.h>
+#import <UMShare/UMShare.h>
 
 #import "LeftViewController.h"
 #import "RightViewController.h"
@@ -30,7 +31,7 @@
     [AVOSCloud setApplicationId:APPID
                       clientKey:APPKEY];
     //友盟
-    [[UMSocialManager defaultManager] setUmSocialAppkey:YMAPPID];
+//    [[UMSocialManager defaultManager] setUmSocialAppkey:YMAPPID];
     
     // 文件夹
     [self wkFolderInit];

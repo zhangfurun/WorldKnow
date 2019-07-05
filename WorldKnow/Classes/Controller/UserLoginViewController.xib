@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -33,7 +32,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxS-1d-lac">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="733.5"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="登录背景.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="wJc-HW-uwl">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="wJc-HW-uwl">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="733.5"/>
                                             <gestureRecognizers/>
                                         </imageView>
@@ -42,7 +41,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户名.png" translatesAutoresizingMaskIntoConstraints="NO" id="wY1-GF-RGD">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usercenter_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="wY1-GF-RGD">
                                             <rect key="frame" x="60" y="100" width="32" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="32" id="MKU-H4-J0E"/>
@@ -61,7 +60,7 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="密码.png" translatesAutoresizingMaskIntoConstraints="NO" id="lwV-6p-NMX">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usercenter_password.png" translatesAutoresizingMaskIntoConstraints="NO" id="lwV-6p-NMX">
                                             <rect key="frame" x="60" y="162" width="32" height="32"/>
                                         </imageView>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXD-t8-6Qj">
@@ -76,7 +75,7 @@
                                                 <constraint firstAttribute="width" constant="32" id="7wv-7E-CXc"/>
                                                 <constraint firstAttribute="height" constant="32" id="L28-43-Sy4"/>
                                             </constraints>
-                                            <state key="normal" image="返回.png"/>
+                                            <state key="normal" image="nav_back.png"/>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="7wv-7E-CXc"/>
@@ -92,7 +91,7 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1V-8w-5xs">
                                             <rect key="frame" x="60" y="419" width="103" height="39"/>
-                                            <state key="normal" title="QQ登录" image="qq图标.png"/>
+                                            <state key="normal" title="QQ登录" image="usercenter_icon_qq.png"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vs-mc-iYU">
                                             <rect key="frame" x="60" y="244" width="255" height="50"/>
@@ -133,7 +132,7 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-tH-sMp">
                                             <rect key="frame" x="202" y="419" width="113" height="39"/>
-                                            <state key="normal" title="新浪登录" image="sina图标.png"/>
+                                            <state key="normal" title="新浪登录" image="usercenter_icon_sina.png"/>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -322,15 +321,15 @@
                 <constraint firstItem="Fzl-U7-e94" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="neA-Rr-9FI"/>
                 <constraint firstAttribute="trailing" secondItem="Fzl-U7-e94" secondAttribute="trailing" id="qk2-g7-Mix"/>
             </constraints>
-            <point key="canvasLocation" x="-844" y="34"/>
+            <point key="canvasLocation" x="-1732" y="40"/>
         </view>
     </objects>
     <resources>
-        <image name="qq图标.png" width="39" height="39"/>
-        <image name="sina图标.png" width="39" height="39"/>
-        <image name="密码.png" width="32" height="32"/>
-        <image name="用户名.png" width="32" height="32"/>
-        <image name="登录背景.jpeg" width="640" height="960"/>
-        <image name="返回.png" width="32" height="32"/>
+        <image name="login_bg.jpeg" width="640" height="960"/>
+        <image name="nav_back.png" width="32" height="32"/>
+        <image name="usercenter_icon_qq.png" width="39" height="39"/>
+        <image name="usercenter_icon_sina.png" width="39" height="39"/>
+        <image name="usercenter_password.png" width="32" height="32"/>
+        <image name="usercenter_user.png" width="32" height="32"/>
     </resources>
 </document>

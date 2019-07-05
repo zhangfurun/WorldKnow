@@ -18,7 +18,8 @@
 #import "WKDataCacheManager.h"
 
 #import "DataBase.h"
-#import <UMSocialCore/UMSocialCore.h>
+//#import <UMSocialCore/UMSocialCore.h>
+#import <UMShare/UMShare.h>
 #import <UShareUI/UShareUI.h>
 
 #import "YYWebImage.h"

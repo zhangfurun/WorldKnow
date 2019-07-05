@@ -8,7 +8,8 @@
 
 #import "UserLoginViewController.h"
 #import <AVOSCloud/AVUser.h>
-#import <UMSocialCore/UMSocialCore.h>
+//#import <UMSocialCore/UMSocialCore.h>
+#import <UMShare/UMShare.h>
 
 @interface UserLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewBackGround;
